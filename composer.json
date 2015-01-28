@@ -1,0 +1,47 @@
+{
+	"name": "abhatia2107/businessbugs",
+	"description": "Business Bugs website.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+	"type": "project",
+	"require": {
+		"laravel/framework": "4.2.*",
+		"facebook/php-sdk-v4": "dev-master",
+		"nesbot/Carbon": "*"
+	},
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php"
+		]
+	},
+	"require-dev":{
+       "fzaninotto/faker": "1.3.*@dev",
+       "phpunit/phpunit": "4.1.*",
+        "Mockery/Mockery": ">=0.7.2",
+        "way/generators": "2.*",
+        "summerstreet/woodling": "~0.1.6",
+		"cbschuld/browser.php": "dev-master"
+    },
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
+}
