@@ -13,5 +13,10 @@
 
 Route::get('/', function()
 {
-	return View::make('pages.index');
+	return View::make('pages.home');
+});
+
+Route::get('/aboutus', function()
+{
+	return View::make('pages.aboutus');
 });

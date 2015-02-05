@@ -1,5 +1,5 @@
 @section('header')
-
+ <div class="container main-container">
 	<div class="navbar-fixed-top" role="navigation">
 	<!-- navbar-top starts -->
 		<div class="navbar-top">
@@ -61,5 +61,6 @@
 		</div>
 		<!-- navbar-header ends -->
 	</div>
-  		
+
+  		</div>
  @show
