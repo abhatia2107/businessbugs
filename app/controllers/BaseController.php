@@ -2,6 +2,32 @@
 
 class BaseController extends Controller {
 
+	protected $admin;
+	protected $featured;
+	protected $feedback;
+	protected $subscription;
+	protected $user;
+
+	protected $adminPanelList=array(
+									'features' => 'Features', 
+									'feedbacks' => 'Feedbacks', 
+									'subscriptions' => 'Subscriptions',
+									'users' => 'Users', 
+								);
+
+	/**
+	 *Constructor to initialize the instance of all Models.
+	 */
+
+	public function __construct()
+	{
+		$this->admin = new Admin;
+		$this->feature = new Feature;
+		$this->feedback = new Feedback;
+		$this->subscription = new Subscription;
+		$this->user = new User;
+	}
+	
 	/**
 	 * Setup the layout used by the controller.
 	 *
@@ -15,4 +41,10 @@ class BaseController extends Controller {
 		}
 	}
 
+	public function getCountForAdmin()
+	{
+		return $countForAdmin=array(
+			'users' => User::count(),
+		); 
+	}
 }
