@@ -4,28 +4,28 @@
     <div class="container">
       <div class="row">
       
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-7">
           <h3>
             Support 
           </h3>
               <ul>
               <li>
-                <a class="inline" href="callto:+8130629829 ">
+                <a class="inline" href="#">
                   <strong>
-                    &#9990; 8130629829 
+                    &#9990; 09729725987
                   </strong>
                 </a>
               </li>
               <li>
-                <a class="inline" href="mailto:help@tshopweb.com">
-                   &#9993; help@eventnp.com
+                <a class="inline" href="#">
+                   &#9993; help@businessbugs.com
                 </a>
               </li>
             </ul>
         </div>
         
         
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
           <h3>
             Information
           </h3>

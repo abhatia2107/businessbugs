@@ -1,5 +1,5 @@
 body{
-	font-family:inherit;
+	font-family:sans-serif;
 }
 .navbar-top{
 	background:rgb(0,80,80);
@@ -13,11 +13,16 @@ body{
  	border: none;
  	color: inherit;
 }
+.navbar-nav li:active{
+ 	background: none;
+ 	border: none;
+ 	color: inherit;
+}
 .nav-tabs{
 	border-bottom: none;
 }
 .navbar-toggle{
- background:white	
+ background:white;	
 }
 .icon-bar{
 	background: rgb(0,100,100);
@@ -26,7 +31,6 @@ body{
 	background: #EDEFF1;
 }
 .banner img{
-	padding:8% 0% 1% 0%;
 	height: 80%;
 	width:100%;
 }
@@ -37,13 +41,21 @@ body{
 ul{
 	list-style: none;
 	line-height: 1.8;
+	margin-left:-40px;
 }
 .btn{
-	background:rgb(0,100,100);
+	background: #CECECE;
 	width:100%;
 }
+#buy{
+	margin-top:-100px;
+	width:auto;
+}
 .textarea{
-width:100%;
+	width:100%;
+}
+.social{
+	width:100%;
 }
 .social li{
 	background: #B5B5B5;
@@ -53,9 +65,39 @@ width:100%;
     float:left;
     margin:0px 20px 0px 0px;
     line-height:2;
+    padding-left: 7px;
 }
 .footer h3{
 	text-transform: uppercase;
 	text-indent: none;
-	text-align: justify;
+	border-bottom: 1px solid #CECECE;
+	font-weight: 300px;
+	margin-bottom: 20px;
+}
+.footer li{
+	text-align: left;
+}
+.block-title-3 {
+    border-bottom: 1px solid #CECECE;
+    font-size: 20px;
+    margin: 0px 0px 15px;
+    padding: 10px 0px;
+    position: relative;
+    text-transform: uppercase;
+}
+.main-container{
+	height:100px;
+}
+.section-title-style2{
+	border-bottom: 1px solid #CECECE;
+}
+.jumbotron{
+	padding-left:10px;
+}
+.col12{
+	text-align: center;
+}
+.icon-video{
+	margin-top:-100px;
+	color:black;
 }

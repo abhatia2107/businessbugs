@@ -141,7 +141,12 @@ Route::get('/terms', function()
 return View::make('Miscellaneous.terms');
 });
 
-Route::get('/contactus', function()
+Route::get('/', function()
 {
-	return View::make('Miscellaneous.contactus');
+	return View::make('pages.home');
+});
+
+Route::get('/aboutus', function()
+{
+	return View::make('pages.aboutus');
 });
