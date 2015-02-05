@@ -1,0 +1,1 @@
+/home/abhishek/Projects/businessbugs/app/views/magazines/show.blade.php
