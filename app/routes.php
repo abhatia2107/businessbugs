@@ -153,5 +153,5 @@ return View::make('Miscellaneous.terms');
 
 Route::get('/contactus', function()
 {
-return View::make('Miscellaneous.contactus');
+	return View::make('Miscellaneous.contactus');
 });
