@@ -112,7 +112,7 @@ class AdminsController extends \BaseController {
 
 	public function disable($id)
 	{
-		$admin=Admin::find($id);	
+		$admin=Admin::find($id);
 		//dd($admin);
 		if($admin){
 			$admin->delete();
