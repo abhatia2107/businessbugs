@@ -22,7 +22,7 @@ Route::group(array('before' => "auth|admin"), function() {
 /*
 	Routes for Main Admin section of admin panel.
 	Only Main Admin is allowed access here.  
- */
+*/
 Route::group(array('before' => "auth|admin|mainAdmin"), function() {
 	Route::get('/admins','AdminsController@index');
 	Route::post('/admins/store','AdminsController@store');
@@ -110,8 +110,8 @@ Route::group(array('before' => "auth"), function() {
 
 /*  To verify that unsubscribe request came from a valid email only,
  	we check user id and email both.
- */
-
+ 
+*/
 Route::get('/users/unsubscribe/{email}/{id}','UsersController@unsubscribe');
 
 Route::group(array('before' => "guest-or-admin"), function() {
@@ -135,6 +135,10 @@ Route::group(array('before' => "csrf"), function() {
 	Route::post('/users/password/reset/submit','RemindersController@postReset');
 });
 
+Route::get('/home', function()
+{
+return View::make('Miscellaneous.home');
+});
 
 Route::get('/aboutus', function()
 {
@@ -151,12 +155,3 @@ Route::get('/terms', function()
 return View::make('Miscellaneous.terms');
 });
 
-Route::get('/', function()
-{
-	return View::make('pages.home');
-});
-
-Route::get('/aboutus', function()
-{
-	return View::make('pages.aboutus');
-});

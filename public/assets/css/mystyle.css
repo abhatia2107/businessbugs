@@ -31,7 +31,7 @@ body{
 	background: #EDEFF1;
 }
 .banner img{
-	height: 80%;
+	height:500px;
 	width:100%;
 }
 .navbar-brand img{
@@ -91,13 +91,31 @@ ul{
 .section-title-style2{
 	border-bottom: 1px solid #CECECE;
 }
-.jumbotron{
+.description{
 	padding-left:10px;
+	background: antiquewhite;
+	margin-bottom:0px;
 }
 .col12{
 	text-align: center;
+	margin-top:-20px;
 }
 .icon-video{
 	margin-top:-100px;
 	color:black;
+}
+.section-title-style2 span {
+    background: none repeat scroll 0% 0% #FFF;
+    padding: 10px;
+    position: relative;
+    width: auto;
+    z-index: 2;
+}
+.title-big{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	line-height: 0;
+}
+.innerPage{
+	padding:inherit;
 }
