@@ -21,13 +21,13 @@
   					<h3>Hi Name_User</h3>
   				</div>
   				<p>
-  					Thanks for signing up at Hobbyix.com. We're ready to activate your account. All we need to do is make sure this is your email address.
+  					Thanks for signing up at businessbugs.in. We're ready to activate your account. All we need to do is make sure this is your email address.
   				</p>
 					<button type="Button" class="btn btn-success btn-lg">
 						Verify Your email address
 					</button>
 					<h3>
-						Team Hobbyix
+						Team Business Bugs
 					</h3>
 					<h4>
 						Thanks for signing up. We're happy to have you on board.
@@ -44,7 +44,7 @@
 			<h6>
 				If you wish to get help or get in touch with us, email <a href="#" class="link">kdmeena95&#64;gmail.com</a>
 			</h6>
-			&#169;Hobbyix.com
+			&#169;businessbugs.in
 		</div>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->

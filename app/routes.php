@@ -43,6 +43,16 @@ Route::group(array('before' => "auth|admin"), function() {
 });
 
 
+//Route for FeaturesController
+Route::group(array('before' => "auth|admin"), function() {	
+	Route::get('/features','FeaturesController@index');
+	Route::post('/features/store/{id}','FeaturesController@store');
+	Route::get('/features/enable/{id}','FeaturesController@enable');
+	Route::get('/features/disable/{id}','FeaturesController@disable');
+	Route::get('/features/delete/{id}','FeaturesController@destroy');
+	Route::get('/features/show/{id}','FeaturesController@show');
+});
+
 //Route for FeedbacksController
 Route::get('/feedbacks/create','FeedbacksController@create');
 Route::post('/feedbacks/store','FeedbacksController@store');	
@@ -66,6 +76,7 @@ Route::group(array('before' => "auth|admin"), function() {
 	Route::get('/magazines/disable/{id}','MagazinesController@disable');
 	Route::get('/magazines/delete/{id}','MagazinesController@destroy');
 	Route::get('/magazines/show/{id}','MagazinesController@show');
+});
 
 Route::group(array('before' => "auth|admin"), function() {
 	//Route for SubscriptionsController
@@ -139,14 +150,4 @@ return View::make('Miscellaneous.support');
 Route::get('/terms', function()
 {
 return View::make('Miscellaneous.terms');
-});
-
-Route::get('/', function()
-{
-	return View::make('pages.home');
-});
-
-Route::get('/aboutus', function()
-{
-	return View::make('pages.aboutus');
 });

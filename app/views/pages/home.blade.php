@@ -1,5 +1,5 @@
-@extends('layout.layoutdef')
-@section('contents')
+@extends('Layouts.layout')
+@section('content')
 <div class="banner">
 	<img src="/assets/images/IMG_2266.JPG">
 	<section class="intro">

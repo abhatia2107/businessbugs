@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateMagazinesTable extends Migration {
+class CreateFeaturesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,14 +12,11 @@ class CreateMagazinesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('magazines', function(Blueprint $table)
+		Schema::create('features', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('magazine',50);
-			$table->integer('magazine_view')->default(0);
-			$table->integer('magazine_purchase')->default(0);
-			$table->integer('magazine_single_price')->nullable();
-			$table->softDeletes();
+			$table->integer('feature_batch_id')->foreign('batch_id')->references('batch_id')->on('batches');
+	        $table->softDeletes();
 			$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
 			$table->timestamp('updated_at');
 		});
@@ -33,7 +30,7 @@ class CreateMagazinesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('magazines');
+		Schema::drop('features');
 	}
 
 }

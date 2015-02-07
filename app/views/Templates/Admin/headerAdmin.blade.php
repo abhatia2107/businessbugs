@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/" target="_blank">Hobbyix</a>
+        <a class="navbar-brand" href="/" target="_blank">Business Bugs</a>
      </div>
      <!-- Top Menu Items -->
      <ul class="nav-ul nav navbar-right top-nav">

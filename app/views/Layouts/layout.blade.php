@@ -11,6 +11,7 @@
 			<header class="layout_header" >
 				@include('Templates.header')
 			</header>
+			@include('Templates.navbar')
 			<!--sign-In pop up modal-->
 			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				@include('Modals.login')
