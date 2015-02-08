@@ -93,7 +93,7 @@ ul{
 .section-title-style2{
 	border-bottom: 1px solid #CECECE;
 }
-.description{
+.description,.invoice{
 	padding-left:10px;
 	background: antiquewhite;
 	margin-bottom:0px;

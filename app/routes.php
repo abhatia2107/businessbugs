@@ -146,6 +146,11 @@ Route::get('/aboutus', function()
 return View::make('Miscellaneous.aboutus');
 });
 
+Route::get('/item', function()
+{
+return View::make('Miscellaneous.item');
+});
+
 Route::get('/support', function()
 {
 return View::make('Miscellaneous.support');
