@@ -124,3 +124,6 @@ ul{
 .modal-footer{
 	text-align:center;
 }
+.required sup{
+	color:#E74C3C;
+}
