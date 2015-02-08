@@ -22,7 +22,7 @@
 	    	</div>
 		</div>
 		<!-- navbar-top ends -->
-			<!-- navbar-header starts -->
+		<!-- navbar-header starts -->
 	<div class="navbar-header">
 		<div class="container">
 			<button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse"> 
@@ -35,25 +35,58 @@
 		      	<a class="navbar-brand" href="/">
 		       		<img src="/assets/images/bblogo.jpeg"/>
 		      	</a>
-	      		<div class="pull-right">
-         			<div class="navbar-collapse collapse">
-          				<ul class="nav navbar-nav">
-				           <li>
-					           	<a href="#" data-target="#ModalLogin">
-					           		<i class="glyphicon glyphicon-user"></i>
-					          	    <span> Sign </span> 
-   									<span> In </span> 
-					            </a>
-				        	</li>
-				          	<li> 
-				            	<a href="#" data-target="#ModalSignup">
-				            		<span> Sign </span>
-				            		<span> Up </span>
-				            	</a> 
-				            </li>
-				        </ul>
-				    </div>
-	          	</div>
+      			<?php
+					$id=Auth::id();
+					if($id)
+					{
+						$user=User::find($id);
+						if($user)
+							$name=$user->user_first_name;
+					}
+				?>
+				@if(!$id)
+					<div class="pull-right">
+	         			<div class="navbar-collapse collapse">
+	          				<ul class="nav navbar-nav">
+					            <li>
+									<a href="#" data-toggle="modal" data-target="#loginModal">LogIn</a>
+						           	<!-- <a href="#" data-target="#ModalLogin">
+						           		<i class="glyphicon glyphicon-user"></i>
+						          	    <span> Sign </span> 
+	   									<span> In </span> 
+						            </a> -->
+					        	</li>
+					          	<li> 
+									<a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>	
+					            	<!-- <a href="#" data-target="#ModalSignup">
+					            		<span> Sign </span>
+					            		<span> Up </span>
+					            	</a>  -->
+					            </li>
+					        </ul>
+					    </div>
+		          	</div>
+		        @else
+		        	<div class="pull-right">
+	         			<div class="navbar-collapse collapse">
+	          				<ul class="nav navbar-nav">
+					            <li>
+									<a href="/users/show/{{$id}}">
+										@if($user)
+											{{$name}}'s 
+										@else
+											My
+										@endif
+										Account 
+									</a>
+					        	</li>
+					          	<li> 
+									<a href="/users/logout" >Logout</a>	
+					            </li>
+					        </ul>
+					    </div>
+		          	</div>
+		       	@endif
 	      	</div>
 	    </div>
 	</div>
