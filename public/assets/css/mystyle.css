@@ -44,12 +44,13 @@ ul{
 	margin-left:-40px;
 }
 .btn{
-	background: #CECECE;
 	width:100%;
 }
-#buy{
+#magazine{
 	margin-top:-100px;
 	width:auto;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 .textarea{
 	width:100%;
@@ -118,4 +119,7 @@ ul{
 }
 .innerPage{
 	padding:inherit;
+}
+.modal-footer{
+	text-align:center;
 }
