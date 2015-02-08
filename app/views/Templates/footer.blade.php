@@ -69,7 +69,7 @@
           <ul>
             <li>
                 <input type="text" class="textarea text-center" placeholder="Email">
-                <button class="btn" type="button">
+                <button class="btn subscribe_btn" type="button">
                   Subscribe 
                   <i class="fa fa-long-arrow-right">
                   </i>

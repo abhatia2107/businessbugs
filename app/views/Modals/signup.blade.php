@@ -83,8 +83,10 @@
                             <input name="signup_terms"  value="forever" checked="checked" type="checkbox" required>
                             I agree to <a href="/terms">terms and conditions.</a>
                         </label>
-                    </div>                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>    
+                    <div class="col-md-12 col-sm-12 col-xs-12">                
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                 </div>
             </form>
         </div>
