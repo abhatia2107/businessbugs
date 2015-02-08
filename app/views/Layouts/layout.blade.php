@@ -10,6 +10,7 @@
 			<!--Header Section contains sign-in sign-up searchbox and logo -->			
 			<header class="layout_header" >
 				@include('Templates.header')
+				@include('Templates.new')
 			</header>
 			<!--sign-In pop up modal-->
 			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

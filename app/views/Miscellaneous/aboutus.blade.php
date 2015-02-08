@@ -72,11 +72,8 @@
           <p class="lead text-center">
           Our belief is to bring a revolution in the entrepreneurship market. We aim to reach approximately 10 lakh readers in this year. We will continue till we make entrepreneurship as the new cool. 
           </p>
-          <h2 class="title-big text-center section-title-style2">
-            <span >
-              Our Team
-            </span>
-          </h2>
+          
+         
         </div>
         <!--/row end-->
     </div>
