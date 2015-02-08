@@ -6,10 +6,14 @@
                     <button type="button" class="close" data-dismiss="modal">
                         <span onClick="refreshForm('#signUpForm')" aria-hidden="true" title="close">&times;</span>                
                     </button>
-                    <h4 class="modal-title" id="myModalLabel1">Sign-Up</h4>
-                    <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Already a member? Login</a>
+                    <h4 class="modal-title text-center" id="myModalLabel1">Sign-Up</h4>
+                    
                 </div>
-                <center><a href="/login/fb"><img height="40px" style="margin-top:14px;" src="/assets/images/signup-with-facebook.png"></a></center>
+                <center>
+                <div class="sign_in_opt text-center">
+                   Already a member? <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">LogIn</a>
+                </div>
+                <a href="/login/fb"><img height="40px" style="margin-top:14px;" src="/assets/images/signup-with-facebook.png"></a></center>
                 <div class="modal-body">
                     <div class="row">
                         <div class="form-group">

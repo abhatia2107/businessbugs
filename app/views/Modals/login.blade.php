@@ -6,10 +6,10 @@
                 <div type="button" class="close" title="Close"  data-dismiss="modal">
                     <span onClick="refreshForm('#loginForm')" aria-hidden="true">&times;</span>
                 </div>
-                <h3 class="modal-title" id="myModalLabel2">LogIn</h3>
+                <h3 class="modal-title text-center" id="myModalLabel2">LogIn</h3>
             </div>
             <div class="modal-body">
-                <div class="sign_up_opt">
+                <div class="sign_up_opt text-center">
                     Not a member yet? <a href="#" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
                 </div>
                 <input type="hidden" name="csrf_token" id="hiddenCSRF" value="{{ csrf_token() }}">
@@ -22,13 +22,13 @@
                      <input type="password" class="form-control " name="password" placeholder="Enter Your Password" id="password">
                 </div>
                 <div class="row">
-                    <div class="form-group rememberMe col-md-6 col-sm-6 col-xs-6">                               
+                    <div class="form-group rememberMe col-md-12 col-sm-12 col-xs-12">                               
                         <label class="control-label">
                             <input name="remember"  value="forever" checked="checked" type="checkbox">
                             Remember Me 
                         </label>                                                             
                     </div>                
-                    <div class="forgetPassword col-md-6 col-sm-6 col-xs-6">
+                    <div class="forgetPassword col-md-12 col-sm-12 col-xs-12">
                         <a href="/users/password/remind">Forgot Password?</a>
                     </div>
                 </div>
