@@ -1,6 +1,6 @@
 @extends('Layouts.layout')
 @section('content')
-<div class="banner">
+<div class="banner header-offset">
   <img src="/assets/images/IMG_2266.JPG">
   <section class="intro">
     <div class="col12">

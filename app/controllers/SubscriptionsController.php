@@ -10,7 +10,11 @@ class SubscriptionsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		$subscriptions=Subscription::withTrashed()->get();
+		$tableName="$_SERVER[REQUEST_URI]";
+		$count=$this->getCountForAdmin();
+		$adminPanelListing=$this->adminPanelList;
+		return View::make('Subscriptions.index',compact('subscriptions','tableName','count','adminPanelListing'));
 	}
 
 	/**
@@ -21,7 +25,7 @@ class SubscriptionsController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return View::make('Subscriptions.create');
 	}
 
 	/**
@@ -32,44 +36,66 @@ class SubscriptionsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$credentianls=Input::all();
+		$validator = Validator::make($credentianls, Subscription::$rules);
+		if($validator->fails())
+		{
+			return Redirect::back()->withInput()->withErrors($validator);
+		}
+		$subscription=Subscription::create($credentianls);
 	}
 
-	/**
-	 * Display the specified resource.
-	 * GET /subscriptions/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
+	public function unsubscribe($email,$id)
 	{
-		//
+		$subscription=Subscription::find($id);
+		if($subscription)
+		{
+			if($subscription->subscription_email==$email)
+			{
+				$subscription->delete();
+				return Redirect::back()->with('success',Lang::get('subscription.unsubscribed'));
+			}
+			else
+			{
+				return Redirect::to('/')->with('failure',Lang::get('validation.permission_denied'));
+			}
+		}
+		else
+		{
+			return Redirect::back()->with('failure',Lang::get('subscription.subscription_not_exist'));
+		}
 	}
 
-	/**
-	 * Show the form for editing the specified resource.
-	 * GET /subscriptions/{id}/edit
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
+	public function enable($id)
 	{
-		//
+		$subscription=Subscription::withTrashed()->find($id);
+		if($subscription){
+			$subscriptionDisabled=Subscription::onlyTrashed()->find($id);
+			if($subscriptionDisabled){
+				$subscriptionDisabled->restore();	
+				return Redirect::to('/subscriptions')->with('success',Lang::get('subscription.subscription_enabled'));
+			}
+			else{
+					return Redirect::to('/subscriptions')->with('failure',Lang::get('subscription.subscription_enable_failed'));
+			}
+		}
+		else
+			return Redirect::to('/subscriptions')->with('failure',Lang::get('subscription.subscription_not_exist'));
 	}
 
-	/**
-	 * Update the specified resource in storage.
-	 * PUT /subscriptions/{id}
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
+	public function disable($id)
 	{
-		//
+		$subscription=Subscription::find($id);	
+		//dd($subscription);
+		if($subscription){
+			$subscription->delete();
+			return Redirect::to('/subscriptions')->with('success',Lang::get('subscription.subscription_disabled'));
+		}
+		else{
+			return Redirect::to('/subscriptions')->with('failure',Lang::get('subscription.subscription_disable_failed'));
+		}
 	}
+
 
 	/**
 	 * Remove the specified resource from storage.
@@ -80,7 +106,14 @@ class SubscriptionsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$subscription=Subscription::withTrashed()->find($id);
+		if($subscription){
+			$subscription->forceDelete();
+			return Redirect::to('/subscriptions')->with('success',Lang::get('subscription.subscription_deleted'));
+		}
+		else{
+			return Redirect::to('/subscriptions')->with('failure',Lang::get('subscription.subscription_delete_failed'));
+		}
 	}
 
 }

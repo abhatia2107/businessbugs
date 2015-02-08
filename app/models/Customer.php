@@ -14,3 +14,4 @@ class Customer extends \Eloquent {
 		'updated_at',
 	];
 	
+}
