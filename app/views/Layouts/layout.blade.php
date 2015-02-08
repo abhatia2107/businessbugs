@@ -10,7 +10,7 @@
 			<!--Header Section contains sign-in sign-up searchbox and logo -->			
 			<header class="layout_header" >
 				@include('Templates.header')
-				@include('Templates.navbar')
+				
 			</header>
 			@include('Templates.navbar')
 			<!--sign-In pop up modal-->
