@@ -1,10 +1,10 @@
 @section("head")
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="description" content="Hobbyix Website">
+    <meta name="description" content="Business Bugs Website">
     <meta name="author" content="Abhishek">
     <meta property="og:image" content="/assets/images/home/banner.jpg">
-    <title>Hobbyix Admin Portal</title>
+    <title>Business Bugs Admin Portal</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css"></link>
     <link rel="stylesheet" type="text/css" href=""/assets/css/bootstrap-theme.min.css"">
     <link rel="stylesheet" type="text/css" href="/assets/css/normalize-3.0.2.min.css">

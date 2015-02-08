@@ -17,7 +17,8 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
+		// dd(Auth::id());
+		return View::make('Miscellaneous.home');
 	}
 
 }

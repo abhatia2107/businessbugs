@@ -9,10 +9,14 @@ class FeedbacksTableSeeder extends Seeder {
 	{
 		$faker = Faker::create();
 
-		foreach(range(1, 10) as $index)
+		foreach(range(1,30) as $index)
 		{
 			Feedback::create([
-
+				'feedback_subject'=>$faker->name,
+				'feedback_user_id'=>$faker->unique()->randomNumber(1,30),
+				'feedback_email'=>$faker->unique()->email,
+				'feedback_description'=>$faker->text(),
+				'feedback_read'=>$faker->boolean(),
 			]);
 		}
 	}

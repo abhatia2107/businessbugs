@@ -1,4 +1,5 @@
-@section ('new')
+@section('navbar')
+
 <div class="main-container">
 <div class="navbar-header">
 	<div class="container">
@@ -35,4 +36,5 @@
 	</div>
 </div>
 </div>
+
 @show

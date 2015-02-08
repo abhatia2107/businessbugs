@@ -11,7 +11,6 @@
 |
 */
 
-
 Route::get('/', 'HomeController@showWelcome');
 
 //To allow access only to admin.
@@ -33,37 +32,53 @@ Route::group(array('before' => "auth|admin|mainAdmin"), function() {
 });
 
 
+Route::group(array('before' => "auth|admin"), function() {	
+	Route::get('/customers','CustomersController@index');
+	Route::post('/customers/store','CustomersController@store');
+	Route::post('/customers/update/{id}','CustomersController@update');
+	Route::get('/customers/enable/{id}','CustomersController@enable');
+	Route::get('/customers/disable/{id}','CustomersController@disable');
+	Route::get('/customers/delete/{id}','CustomersController@destroy');
+	Route::get('/customers/show/{id}','CustomersController@show');
+});
+
+
+//Route for FeaturesController
+Route::group(array('before' => "auth|admin"), function() {	
+	Route::get('/features','FeaturesController@index');
+	Route::post('/features/store/{id}','FeaturesController@store');
+	Route::get('/features/enable/{id}','FeaturesController@enable');
+	Route::get('/features/disable/{id}','FeaturesController@disable');
+	Route::get('/features/delete/{id}','FeaturesController@destroy');
+	Route::get('/features/show/{id}','FeaturesController@show');
+});
+
+//Route for FeedbacksController
+Route::get('/feedbacks/create','FeedbacksController@create');
+Route::post('/feedbacks/store','FeedbacksController@store');	
+
+Route::group(array('before' => "auth|admin"), function() {	
+	Route::get('/feedbacks','FeedbacksController@index');
+	Route::get('/feedbacks/delete/{id}','FeedbacksController@destroy');
+	Route::get('/feedbacks/read/{id}','FeedbacksController@read');
+	Route::get('/feedbacks/unread/{id}','FeedbacksController@unread');
+	Route::get('/feedbacks/done/{id}','FeedbacksController@done');
+	Route::get('/feedbacks/undone/{id}','FeedbacksController@undone');
+	Route::get('/feedbacks/show/{id}','FeedbacksController@show');
+});
+
+Route::group(array('before' => "auth|admin"), function() {	
+	//Route for MagazinesController
+	Route::get('/magazines','MagazinesController@index');
+	Route::post('/magazines/store','MagazinesController@store');
+	Route::post('/magazines/update/{id}','MagazinesController@update');
+	Route::get('/magazines/enable/{id}','MagazinesController@enable');
+	Route::get('/magazines/disable/{id}','MagazinesController@disable');
+	Route::get('/magazines/delete/{id}','MagazinesController@destroy');
+	Route::get('/magazines/show/{id}','MagazinesController@show');
+});
 
 Route::group(array('before' => "auth|admin"), function() {
-
-	//Route for DistrictsController
-	Route::get('/districts','DistrictsController@index');
-	Route::post('/districts/store','DistrictsController@store');
-	Route::post('/districts/update/{id}','DistrictsController@update');
-	Route::get('/districts/enable/{id}','DistrictsController@enable');
-	Route::get('/districts/disable/{id}','DistrictsController@disable');
-	Route::get('/districts/delete/{id}','DistrictsController@destroy');
-	Route::get('/districts/show/{id}','DistrictsController@show');
-
-	//Route for StatesController
-	Route::get('/states','StatesController@index');
-	Route::post('/states/store','StatesController@store');
-	Route::post('/states/update/{id}','StatesController@update');
-	Route::get('/states/enable/{id}','StatesController@enable');
-	Route::get('/states/disable/{id}','StatesController@disable');
-	Route::get('/states/delete/{id}','StatesController@destroy');
-	Route::get('/states/show/{id}','StatesController@show');
-
-	//Route for SubcategoriesController
-	Route::get('/subcategories','SubcategoriesController@index');
-	Route::post('/subcategories/store','SubcategoriesController@store');
-	Route::post('/subcategories/update/{id}','SubcategoriesController@update');
-	Route::get('/subcategories/enable/{id}','SubcategoriesController@enable');
-	Route::get('/subcategories/disable/{id}','SubcategoriesController@disable');
-	Route::get('/subcategories/delete/{id}','SubcategoriesController@destroy');
-	Route::get('/subcategories/show/{id}','SubcategoriesController@show');
-
-
 	//Route for SubscriptionsController
 	Route::get('/subscriptions','SubscriptionsController@index');
 	Route::get('/subscriptions/enable/{id}','SubscriptionsController@enable');
@@ -74,20 +89,6 @@ Route::group(array('before' => "auth|admin"), function() {
 
 Route::post('/subscriptions','SubscriptionsController@store');
 Route::get('/subscriptions/unsubscribe/{email}/{id}', 'SubscriptionsController@disable');
-
-Route::group(array('before' => "auth|institute-or-admin"), function() {
-Route::get('/venues/create','VenuesController@create');
-Route::post('/venues/store','VenuesController@store');
-Route::get('/venues','VenuesController@index');
-});
-
-//Route for VenuesController
-Route::group(array('before' => "auth|institute-or-admin|venueOwn-or-admin"), function() {
-Route::get('/venues/edit/{id}','VenuesController@edit');
-Route::post('/venues/update/{id}','VenuesController@update');
-Route::get('/venues/delete/{id}','VenuesController@destroy');
-});
-
 
 //Route for UsersController
 
@@ -154,4 +155,3 @@ Route::get('/terms', function()
 {
 return View::make('Miscellaneous.terms');
 });
-
