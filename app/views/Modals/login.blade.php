@@ -32,7 +32,7 @@
                         <a href="/users/password/remind">Forgot Password?</a>
                     </div>
                 </div>
-                <div class="signin_button"><button type="submit" class="btn btn-primary">LogIn</button></div>
+                <div class="signin_button text-center"><button type="submit" class="btn btn-primary">LogIn</button></div>
             </div>
             <div class="modal-footer">                               
                 <a href="/login/fb"><img height="35px" src="/assets/images/login_facebook.png"></a>                

@@ -4,8 +4,8 @@
   <img src="/assets/images/IMG_2266.JPG">
   <section class="intro">
     <div class="col12">
-      <button type="button" class="btn" id="magazine">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></button>
-      <button type="button" class="btn" id="magazine">Subscribe Now<span class="glyphicon glyphicon-chevron-right"></span></button>
+      <a role="button" class="btn btn-default" id="magazine" href="/item">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a role="button" class="btn btn-default" id="magazine">Subscribe Now<span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
   </section>
   </img>

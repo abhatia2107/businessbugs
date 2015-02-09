@@ -16,8 +16,8 @@
                 <a href="/login/fb"><img height="40px" style="margin-top:14px;" src="/assets/images/signup-with-facebook.png"></a></center>
                 <div class="modal-body">
                     <div class="row">
-                        <div class="form-group">
-                            <label for="user_first_name" class="col-sm-3 control-label ">First Name<span class="required">*</span>
+                        <div class="form-group required">
+                            <label for="user_first_name" class="col-sm-3 control-label ">First Name<sup>*</sup>
                             </label>
                             <div class="col-sm-8">
                                 <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
@@ -34,8 +34,8 @@
                         </div>
                     </div><br>
                     <div class="row">
-                        <div class="form-group">
-                            <label for="email" class="col-sm-3 control-label ">Email<span class="required">*</span>
+                        <div class="form-group required">
+                            <label for="email" class="col-sm-3 control-label ">Email<sup>*</sup>
                             </label>
                             <div class="col-sm-8">
                                 <input type="email"  placeholder="mymail@example.com" class="form-control " name="email"  id="email" value="@if(isset($userDetails)){{$userDetails->email}}@else{{Input::old('email')}}@endif">
@@ -43,24 +43,24 @@
                         </div>
                     </div><br>
                     <div class="row">
-                        <div class="form-group">
-                            <label for="user_contact_no" class="col-sm-3 control-label ">Mobile Number<span class="required">*</span></label>
+                        <div class="form-group required">
+                            <label for="user_contact_no" class="col-sm-3 control-label ">Mobile Number<sup>*</sup></label>
                             <div class="col-sm-8">
                                 <input type="tel" class="form-control " name="user_contact_no"  id="user_contact_no" value="@if(isset($userDetails)){{$userDetails->user_contact_no}}@else{{Input::old('user_contact_no')}}@endif">
                             </div>
                         </div>
                     </div><br>
                     <div class="row">
-                        <div class="form-group">
-                            <label for="user_location" class="col-sm-3 control-label ">City<span class="required">*</span></label>
+                        <div class="form-group required">
+                            <label for="user_location" class="col-sm-3 control-label ">City<sup>*</sup></label>
                             <div class="col-sm-8">
                                 <input type="tel" class="form-control " name="user_location"  id="user_location" value="@if(isset($userDetails)){{$userDetails->user_location}}@else{{Input::old('user_location')}}@endif">
                             </div>
                         </div>
                     </div><br>
                     <div class="row">
-                        <div class="form-group">
-                            <label for="password" class="col-sm-3 control-label ">Password<span class="required">*</span>
+                        <div class="form-group required">
+                            <label for="password" class="col-sm-3 control-label ">Password<sup>*</sup>
                             </label>
                             <div class="col-sm-8">
                                 <input type="password" class="form-control " name="password"  id="password">
@@ -68,8 +68,8 @@
                         </div>
                     </div><br>
                     <div class="row">
-                        <div class="form-group">
-                            <label for="password_confirmation" class="col-sm-3 control-label ">Confirm Password<span class="required">*</span>
+                        <div class="form-group required">
+                            <label for="password_confirmation" class="col-sm-3 control-label ">Confirm Password<sup>*</sup>
                             </label>
                             <div class="col-sm-8">
                                 <input type="password"   class="form-control " name="password_confirmation"  id="password_confirmation">
@@ -83,8 +83,10 @@
                             <input name="signup_terms"  value="forever" checked="checked" type="checkbox" required>
                             I agree to <a href="/terms">terms and conditions.</a>
                         </label>
-                    </div>                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>    
+                    <div class="col-md-12 col-sm-12 col-xs-12">                
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                 </div>
             </form>
         </div>

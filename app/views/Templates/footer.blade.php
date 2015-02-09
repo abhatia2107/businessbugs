@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
       
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-7">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <h3>
             Support 
           </h3>
@@ -25,7 +25,7 @@
         </div>
         
         
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-5">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <h3>
             Information
           </h3>
@@ -69,7 +69,7 @@
           <ul>
             <li>
                 <input type="text" class="textarea text-center" placeholder="Email">
-                <button class="btn" type="button">
+                <button class="btn subscribe_btn" type="button">
                   Subscribe 
                   <i class="fa fa-long-arrow-right">
                   </i>
