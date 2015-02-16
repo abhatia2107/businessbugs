@@ -1,5 +1,5 @@
 @section("login")
-<div class="modal-dialog" >
+<div class="modal-dialog login" >
     <div class="modal-content">
         <form name="login" class="login" id="loginForm" role="form" method="post" action="/users/login/submit" enctype="multipart/form-data">
             <div class="modal-header">
@@ -13,13 +13,13 @@
                     Not a member yet? <a href="#" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign Up</a>
                 </div>
                 <input type="hidden" name="csrf_token" id="hiddenCSRF" value="{{ csrf_token() }}">
-                <div class="form-group inner-addon" >
-                     <i class="glyphicon glyphicon-envelope left-addon"></i>
-                     <input type="email"  placeholder="Enter Your E-Mail ID (mymail@mail.com)" class="form-control " name="email"  id="email" value="@if(isset($userDetails)){{$userDetails->email}}@else{{Input::old('email')}}@endif">
+                <div class="form-group inner-addon">
+                     <i class="glyphicon glyphicon-envelope left-addon glyph-left"></i>
+                     <input type="email" placeholder="Enter Your E-Mail ID (mymail@mail.com)" class="form-control " name="email"  id="email" value="@if(isset($userDetails)){{$userDetails->email}}@else{{Input::old('email')}}@endif" aria-describedby="basic-addon1">
                 </div>
                 <div class="form-group inner-addon">
-                    <i class="glyphicon glyphicon-lock left-addon"></i>
-                     <input type="password" class="form-control " name="password" placeholder="Enter Your Password" id="password">
+                    <i class="glyphicon glyphicon-lock left-addon glyph-left"></i>
+                     <input type="password" class="form-control " name="password" placeholder="    Enter Your Password" id="password">
                 </div>
                 <div class="row">
                     <div class="form-group rememberMe col-md-12 col-sm-12 col-xs-12">                               
