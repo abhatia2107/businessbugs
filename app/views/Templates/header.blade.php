@@ -22,10 +22,6 @@
 	    	</div>
 		</div>
 		<!-- navbar-top ends -->
-
-
 	</div>
-
-	
 </div>
 @show

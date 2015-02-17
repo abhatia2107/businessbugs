@@ -1,6 +1,6 @@
 @section('navbar')
 <div class="main-container"> 
-<div class="navbar-header">
+	<div class="navbar-header">
 		<div class="container">
 			<button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse"> 
     			<span class="sr-only"> Toggle navigation </span> 
@@ -67,5 +67,5 @@
 	      	</div>
 	    </div>
 	</div>
-	</div>
-	@show
+</div>
+@show
