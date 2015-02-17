@@ -159,6 +159,11 @@ Route::get('/aboutus', function()
 return View::make('Miscellaneous.aboutus');
 });
 
+Route::get('/contactus', function()
+{
+return View::make('Miscellaneous.contactus');
+});
+
 Route::get('/item', function()
 {
 return View::make('Miscellaneous.item');
