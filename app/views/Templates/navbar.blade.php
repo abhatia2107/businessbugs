@@ -2,12 +2,7 @@
 <div class="main-container"> 
 <div class="navbar-header">
 		<div class="container">
-			<button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-collapse"> 
-    			<span class="sr-only"> Toggle navigation </span> 
-    			<span class="icon-bar"> </span> 
-    			<span class="icon-bar"> </span> 
-    			<span class="icon-bar"> </span> 
-  			</button> 
+			
   			<div class="row">
 		      	<a class="navbar-brand" href="/">
 		       		<img src="/assets/images/bblogo.jpeg"/>
@@ -23,10 +18,10 @@
 				?>
 				@if(!$id)
 					<div class="pull-right">
-	         			<div class="navbar-collapse collapse">
-	          				<ul class="nav navbar-nav">
+	         			
+	          				<ul class="nav navbar-nav nav-tabs">
 					            <li>
-									<a href="#" data-toggle="modal" data-target="#loginModal">LogIn</a>
+									<a href="#" data-toggle="modal" data-target="#loginModal"><span class="hidden-xs">LogIn</span><i class="glyphicon glyphicon-log-in visible-xs"></i></a>
 						           	<!-- <a href="#" data-target="#ModalLogin">
 						           		<i class="glyphicon glyphicon-user"></i>
 						          	    <span> Sign </span> 
@@ -34,19 +29,19 @@
 						            </a> -->
 					        	</li>
 					          	<li> 
-									<a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>	
+									<a href="#" data-toggle="modal" data-target="#signupModal"><span class="hidden-xs">Sign Up</span><i class="glyphicon glyphicon-user visible-xs"></i></a>	
 					            	<!-- <a href="#" data-target="#ModalSignup">
 					            		<span> Sign </span>
 					            		<span> Up </span>
 					            	</a>  -->
 					            </li>
 					        </ul>
-					    </div>
+					    
 		          	</div>
 		        @else
 		        	<div class="pull-right">
-	         			<div class="navbar-collapse collapse">
-	          				<ul class="nav navbar-nav">
+	         			
+	          				<ul class="nav navbar-nav nav-tabs">
 					            <li>
 									<a href="/users/show/{{$id}}">
 										@if($user)
@@ -54,14 +49,14 @@
 										@else
 											My
 										@endif
-										Account 
+											Account 
 									</a>
 					        	</li>
 					          	<li> 
-									<a href="/users/logout" >Logout</a>	
+									<a href="/users/logout"><span class="hidden-xs">Logout</span><i class="glyphicon glyphicon-log-out visible-xs"></i></a>
 					            </li>
 					        </ul>
-					    </div>
+					    
 		          	</div>
 		       	@endif
 	      	</div>
