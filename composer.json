@@ -6,7 +6,6 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"facebook/php-sdk-v4": "dev-master",
 		"nesbot/Carbon": "*"
 	},
 	"autoload": {

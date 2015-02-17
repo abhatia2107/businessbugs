@@ -17,8 +17,23 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		// dd(Auth::id());
-		return View::make('Miscellaneous.home');
+		$homeLang =Lang::get('ViewsLang/home');
+		// dd($homeLang);
+		return View::make('Miscellaneous.home',compact('homeLang','featuredBatches'));
 	}
 
+	public function showDummyWelcome()
+	{
+		return View::make('Miscellaneous.homeDummy');
+	}
+
+	public function showAdminHome()
+	{
+		$homeAdminLang =Lang::get('homeAdmin');
+		$tableName="$_SERVER[REQUEST_URI]";
+		$count=$this->getCountForAdmin();
+		$adminPanelListing=$this->adminPanelList;
+		return View::make('Miscellaneous.Admin.home',compact('homeAdminLang','tableName','count','adminPanelListing'));
+	}
+	
 }

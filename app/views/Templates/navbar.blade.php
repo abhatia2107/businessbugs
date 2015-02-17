@@ -1,11 +1,11 @@
 @section('navbar')
 <div class="main-container"> 
-<div class="navbar-header">
+	<div class="navbar-header">
 		<div class="container">
 			
   			<div class="row">
 		      	<a class="navbar-brand" href="/">
-		       		<img src="/assets/images/bblogo.jpeg"/>
+		       		<img src="/assets/images/businessbugs_logo.jpg"/>
 		      	</a>
       			<?php
 					$id=Auth::id();
@@ -21,7 +21,9 @@
 	         			
 	          				<ul class="nav navbar-nav nav-tabs">
 					            <li>
+
 									<a href="#" data-toggle="modal" data-target="#loginModal"><span class="hidden-xs">LogIn</span><i class="glyphicon glyphicon-log-in visible-xs"></i></a>
+
 						           	<!-- <a href="#" data-target="#ModalLogin">
 						           		<i class="glyphicon glyphicon-user"></i>
 						          	    <span> Sign </span> 
@@ -62,5 +64,5 @@
 	      	</div>
 	    </div>
 	</div>
-	</div>
-	@show
+</div>
+@show

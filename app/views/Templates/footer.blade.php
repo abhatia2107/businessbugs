@@ -12,13 +12,13 @@
               <li>
                 <a class="inline" href="#">
                   <strong>
-                    &#9990; 09729725987
+                    &#9990; 9418890376
                   </strong>
                 </a>
               </li>
               <li>
                 <a class="inline" href="#">
-                   &#9993; help@businessbugs.com
+                   &#9993; contact@businessbugs.in
                 </a>
               </li>
             </ul>
@@ -31,21 +31,16 @@
           </h3>
           <ul>
             <li>
-              <a href="/login">
-                Sign In
-              </a>
-            </li>
-            <li>
-              <a href="/signup">
-                Sign Up
-              </a>
-            </li>
-            <li>
 
               <a href="/aboutus">
                 About us
               </a>
               
+            </li>
+            <li>
+              <a href="http://businessbugs.blogspot.in/">
+                Blog
+              </a>
             </li>
             <li>
               <a href="/contactus">
@@ -78,25 +73,25 @@
           </ul>
           <ul class="social">
             <li>
-              <a href="http://facebook.com">
+              <a href="https://www.facebook.com/businessbugs">
                 <i class="fa fa-facebook">
                 </i>
               </a>
             </li>
             <li>
-              <a href="http://twitter.com">
+              <a href="https://twitter.com/Business_Bugs">
                 <i class="fa fa-twitter">
                 </i>
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a href="https://plus.google.com">
                 <i class="fa fa-google-plus">
                 </i>
               </a>
-            </li>
+            </li> -->
             <li>
-              <a href="http://youtube.com">
+              <a href="https://www.youtube.com/channel/UCWNvWJLEZ6eHBOZTRiZ1aoQ">
                 <i class="fa fa-youtube">              
                 </i>
               </a>

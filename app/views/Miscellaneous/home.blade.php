@@ -3,28 +3,28 @@
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
 <div class="item active">
-<img alt="First slide" src="/assets/images/IMG_2266.JPG">
+<img alt="First slide" src="/assets/images/Home Slider/bawa.jpg">
 <section class="intro">
     <div class="col12">
-      <a role="button" class="btn btn-default" id="magazine" href="/item">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a role="button" class="btn btn-default" id="magazine" href="{{url('/item')}}">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
   </section>
   </img>
 </div>
 <div class="item">
-<img alt="Second slide" src="/assets/images/IMG_2260.JPG">
+<img alt="Second slide" src="/assets/images/Home Slider/entrepreneur.png">
 <section class="intro">
     <div class="col12">
-      <a role="button" class="btn btn-default" id="magazine" href="/item">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a role="button" class="btn btn-default" id="magazine" href="{{url('/item')}}">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
   </section>
   </img>
 </div>
 <div class="item">
-<img alt="Third slide" src="/assets/images/IMG_2304.JPG">
+<img alt="Third slide" src="/assets/images/Home Slider/modi.jpg">
 <section class="intro">
     <div class="col12">
-      <a role="button" class="btn btn-default" id="magazine" href="/item">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a role="button" class="btn btn-default" id="magazine" href="{{url('/item')}}">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
   </section>
   </img>

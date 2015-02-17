@@ -78,6 +78,19 @@ Route::group(array('before' => "auth|admin"), function() {
 	Route::get('/magazines/show/{id}','MagazinesController@show');
 });
 
+
+Route::group(array('before' => "auth|admin"), function() {	
+	Route::get('/payments','PaymentsController@index');
+	Route::get('/payments/create','PaymentsController@create');
+	Route::post('/payments/store','PaymentsController@store');
+	Route::post('/payments/update/{id}','PaymentsController@update');
+	Route::get('/payments/enable/{id}','PaymentsController@enable');
+	Route::get('/payments/disable/{id}','PaymentsController@disable');
+	Route::get('/payments/delete/{id}','PaymentsController@destroy');
+	Route::get('/payments/show/{id}','PaymentsController@show');
+});
+
+
 Route::group(array('before' => "auth|admin"), function() {
 	//Route for SubscriptionsController
 	Route::get('/subscriptions','SubscriptionsController@index');
@@ -144,6 +157,11 @@ return View::make('Miscellaneous.home');
 Route::get('/aboutus', function()
 {
 return View::make('Miscellaneous.aboutus');
+});
+
+Route::get('/contactus', function()
+{
+return View::make('Miscellaneous.contactus');
 });
 
 Route::get('/item', function()

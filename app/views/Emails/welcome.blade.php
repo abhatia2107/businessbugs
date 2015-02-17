@@ -1,54 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-		<style type="text/css">
-			.body{
-				padding-top:45px;
-				background: #f0f3f6;
-				font-family:sans-serif;
-			}
-			a:hover{
-				text-decoration: none;
-			}
-		</style>
 	</head>
-	<body class="body">
-		<div class="container">	
-			<div class="jumbotron">
-				<div class="page-header">
-  					<h3>After Registration Email</h3>
-  					<h3>Hi Name_User</h3>
-  				</div>
-  				<p>
-  					Thanks for signing up at businessbugs.in. We're ready to activate your account. All we need to do is make sure this is your email address.
-  				</p>
-					<button type="Button" class="btn btn-success btn-lg">
-						Verify Your email address
-					</button>
-					<h3>
-						Team Business Bugs
-					</h3>
-					<h4>
-						Thanks for signing up. We're happy to have you on board.
-					</h4>
+	<body class="body" style="background:#eef0f1;">
+		<div style="padding:25px ;margin-right: auto;margin-left: auto;">
+			<div style="background:#fff; color:#000; max-width: 100%;  padding: 20px 0px 20px 25px;border-radius: 15px;">
+				<div  style="text-align:center;">
+					<h1 style="color:#000;  margin-right : 25px;">	
+						BUSINESS BUGS
+					</h1>
+				</div>
+				<h1 style="font-size:150%; color:#000;">	
+					Dear {{ $name}},
+				</h1>
+				<p style="font-size:120%; color:#000;">
+					We're ready to activate your account. All we need to do is make sure this is your email address.
+				</p>
+				<div style="text-align:center;">
+					<a href="{{ URL::to('/users/registration/verify/'.$userId.'/'.$confirmationcode) }}">
+						<button type="button" style="color: #fff; background-color: #5cb85c;border-color: #4cae4c;color: #fff;background-color: #449d44;border-color: #398439;background-color: #5cb85c;padding: 10px 16px;font-size: 18px;line-height: 1.33;border-radius: 6px; ">
+							VERIFY ADDRESS
+						</button>
+					</a>
+				</div>
+				<p style="font-size:85%; color:#444;">
+					Having Troubles? Copy this url to your browser:<a href="{{ URL::to('/users/registration/verify/'.$userId.'/'.$confirmationcode) }}">{{ URL::to('/users/registration/verify/'.$userId.'/'.$confirmationcode) }}</a>
+				</p>
+				<p style="font-size:85%; color:#444;">
+					For any queries, reach out to us at: <a href="mailto:support@hobbyix.com">support@businessbugs.in</a>
+				</p>
+				<p style="font-size:85%; text-align:center; color:#444;">
+					&#169; 2015 businessbugs.in
+				</p>
 			</div>
 		</div>
-		<div class=text-center>
-			<h6>
-				If you face any issues with above button then just copy this url to your browser:
-			</h6>
-			<h6>
-				<a href="#" class="link">https://mail.google.com/mail/u/0/#all/14b488f0d640b3fa</a>
-			</h6>
-			<h6>
-				If you wish to get help or get in touch with us, email <a href="#" class="link">kdmeena95&#64;gmail.com</a>
-			</h6>
-			&#169;businessbugs.in
-		</div>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-		<!-- Latest compiled and minified JavaScript -->
-		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js">
-		</script>
 	</body>
 </html>
