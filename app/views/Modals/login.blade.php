@@ -1,7 +1,7 @@
 @section("login")
 <div class="modal-dialog login" >
     <div class="modal-content">
-        <form name="login" class="login" id="loginForm" role="form" method="post" action="/users/login/submit" enctype="multipart/form-data">
+        <form name="login" class="login" id="loginForm" role="form" method="post" action="{{url('/users/login/submit')}}" enctype="multipart/form-data">
             <div class="modal-header">
                 <div type="button" class="close" title="Close"  data-dismiss="modal">
                     <span onClick="refreshForm('#loginForm')" aria-hidden="true">&times;</span>
@@ -35,7 +35,7 @@
                 <div class="signin_button text-center"><button type="submit" class="btn btn-primary">LogIn</button></div>
             </div>
             <div class="modal-footer">                               
-                <a href="/login/fb"><img height="35px" src="/assets/images/login_facebook.png"></a>                
+                <a href="{{url('/login/fb')}}"><img height="35px" src="/assets/images/login_facebook.png"></a>                
             </div>
         </form>
     </div>

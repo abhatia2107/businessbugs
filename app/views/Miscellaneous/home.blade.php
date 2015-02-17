@@ -6,7 +6,7 @@
 <img alt="First slide" src="/assets/images/Home Slider/bawa.jpg">
 <section class="intro">
     <div class="col12">
-      <a role="button" class="btn btn-default" id="magazine" href="/item">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a role="button" class="btn btn-default" id="magazine" href="{{url('/item')}}">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
   </section>
   </img>
@@ -15,7 +15,7 @@
 <img alt="Second slide" src="/assets/images/Home Slider/entrepreneur.png">
 <section class="intro">
     <div class="col12">
-      <a role="button" class="btn btn-default" id="magazine" href="/item">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a role="button" class="btn btn-default" id="magazine" href="{{url('/item')}}">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
   </section>
   </img>
@@ -24,7 +24,7 @@
 <img alt="Third slide" src="/assets/images/Home Slider/modi.jpg">
 <section class="intro">
     <div class="col12">
-      <a role="button" class="btn btn-default" id="magazine" href="/item">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
+      <a role="button" class="btn btn-default" id="magazine" href="{{url('/item')}}">Buy It Now<span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
   </section>
   </img>
