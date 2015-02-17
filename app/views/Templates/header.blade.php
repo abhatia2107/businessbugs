@@ -8,13 +8,13 @@
 			        <div class="pull-right">
 			            <ul class="nav navbar-nav nav-tabs">
 			            	<li> 
-			            		<a href="#"><span class="hidden-xs">Home</span> <i class="glyphicon glyphicon-home hide visible-xs "></i> </a>
+			            		<a href="/"><span class="hidden-xs">Home</span> <i class="glyphicon glyphicon-home hide visible-xs "></i> </a>
 			            	</li>
 					        <li> 
-					        	<a href="#"><span class="hidden-xs">Contact Us</span> <i class="glyphicon glyphicon-phone-alt hide visible-xs "></i> </a> 
+					        	<a href="/contactus"><span class="hidden-xs">Contact Us</span> <i class="glyphicon glyphicon-phone-alt hide visible-xs "></i> </a> 
 					        </li>
 					        <li> 
-					        	<a href="#"><span class="hidden-xs">About Us</span> <i class="glyphicon glyphicon-info-sign hide visible-xs "></i></a>
+					        	<a href="/aboutus"><span class="hidden-xs">About Us</span> <i class="glyphicon glyphicon-info-sign hide visible-xs "></i></a>
 					        </li>
 					    </ul>
 			        </div>

@@ -10,7 +10,7 @@
   			</button> 
   			<div class="row">
 		      	<a class="navbar-brand" href="/">
-		       		<img src="/assets/images/bblogo.jpeg"/>
+		       		<img src="/assets/images/businessbugs_logo.jpg"/>
 		      	</a>
       			<?php
 					$id=Auth::id();
@@ -26,7 +26,7 @@
 	         			<div class="navbar-collapse collapse">
 	          				<ul class="nav navbar-nav">
 					            <li>
-									<a href="#" data-toggle="modal" data-target="#loginModal">LogIn</a>
+									<a href="#" data-toggle="modal" data-target="#loginModal">Log In</a>
 						           	<!-- <a href="#" data-target="#ModalLogin">
 						           		<i class="glyphicon glyphicon-user"></i>
 						          	    <span> Sign </span> 
