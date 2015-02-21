@@ -9,7 +9,7 @@
 		 <!--  id="page" class="hfeed site" -->
 			<!--Header Section contains sign-in sign-up searchbox and logo -->			
 			<header class="layout_header" >
-				@include('Templates.header')
+			@include('Templates.header')
 				
 			</header>
 			@include('Templates.navbar')
