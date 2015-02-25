@@ -1,0 +1,57 @@
+.logo-full img{
+ height:100px;
+ width:400px;
+ margin-left: 40px;
+}
+.side-header{
+	height:50px;
+	text-align: right;
+	padding-top: 20px;
+}
+.navbar-header{
+	float:none;
+}
+.nav-tabs{
+	border-bottom:none;
+}
+.sheep{
+	float:right;
+}
+.wrapper {
+width: 80%;
+margin: 0 10%;
+}
+.main main h1 {
+font-size: 3.438em;
+line-height: 1.45;
+margin-bottom: 0.491em;
+margin-top: 30px;
+text-align: center;
+font-weight: bold;
+font-color:#5b3839;
+}
+.carousel .item img{
+	height: 500px;
+	width:100%;
+}
+.img-text{
+	background:transparent;
+	text-align: center;
+	margin-top:-162px;
+	font-size: 35px;
+	font-weight: normal;
+}
+.mid-text{
+	text-align: justify;
+	font-size: 22px;
+}
+.center_title{
+	background: rgb(0,300,600);
+	height:40px;
+	padding-left: 10px;
+}
+.related a{
+	display: inline;
+	margin: 20px 10px;
+	padding: 25px;
+}
