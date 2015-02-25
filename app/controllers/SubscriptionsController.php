@@ -43,6 +43,16 @@ class SubscriptionsController extends \BaseController {
 			return Redirect::back()->withInput()->withErrors($validator);
 		}
 		$subscription=Subscription::create($credentianls);
+		/*Confirmation mail is to be send to the newly subscribed user*/
+		$email=$credentianls['subscription_email'];
+		$name="Business Bugs User";
+		$subject=Lang::get('subscription.subscribed');
+		$data=array();
+		Mail::later(15,'Emails.subscription.subscriptionEmail', $data, function($message) use ($email, $name, $subject)
+		{
+			$message->to($email,$name)->subject($subject);
+		});
+		return Redirect::back()->with('success',Lang::get('subscription.subscribed'));
 	}
 
 	public function unsubscribe($email,$id)
@@ -53,7 +63,7 @@ class SubscriptionsController extends \BaseController {
 			if($subscription->subscription_email==$email)
 			{
 				$subscription->delete();
-				return Redirect::back()->with('success',Lang::get('subscription.unsubscribed'));
+				return Redirect::to('/')->with('success',Lang::get('subscription.unsubscribed'));
 			}
 			else
 			{

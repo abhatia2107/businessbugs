@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.gmail.com',
+	'host' => '128.199.108.157',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'abhishekcool1243@gmail.com', 'name' => 'Abhishek Bhatia'),
+	'from' => array('address' => 'services@businessbugs.in', 'name' => 'Business Bugs'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'abhishekcool1243@gmail.com',
+	'username' => 'services@businessbugs.in',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'AdlakhA#147',
+	'password' => 'servicesbugs',
 
 	/*
 	|--------------------------------------------------------------------------

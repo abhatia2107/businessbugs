@@ -81,13 +81,10 @@ Route::group(array('before' => "auth|admin"), function() {
 
 Route::group(array('before' => "auth|admin"), function() {	
 	Route::get('/payments','PaymentsController@index');
-	Route::get('/payments/create','PaymentsController@create');
-	Route::get('/payments/store/{id}','PaymentsController@store');
-	Route::post('/payments/update/{id}','PaymentsController@update');
-	Route::get('/payments/enable/{id}','PaymentsController@enable');
-	Route::get('/payments/disable/{id}','PaymentsController@disable');
-	Route::get('/payments/delete/{id}','PaymentsController@destroy');
-	Route::get('/payments/show/{id}','PaymentsController@show');
+	Route::get('/payments/create/{id}','PaymentsController@create');
+	Route::post('/payments/success','PaymentsController@success');
+	Route::post('/payments/failure','PaymentsController@failure');
+	Route::post('/payments/cancel','PaymentsController@cancel');
 });
 
 

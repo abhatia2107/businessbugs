@@ -295,7 +295,7 @@ class UsersController extends \BaseController {
 			'confirmationcode'=>$confirmationCode,
 			'userId'=>$userId,
 			];
-			/*Confirmation mail is to be send to the newly registerd user*/
+			/*Confirmation mail is to be send to the newly registered user*/
 			$subject=Lang::get('user.user_signup_mail_subject');
 			Mail::later(15,'Emails.welcome', $data, function($message) use ($email,$name,$subject)
 			{

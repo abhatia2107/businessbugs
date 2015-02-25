@@ -63,12 +63,14 @@
           </h3>
           <ul>
             <li>
-                <input type="text" class="textarea text-center" placeholder="Email">
-                <button class="btn subscribe_btn" type="button">
-                  Subscribe 
-                  <i class="fa fa-long-arrow-right">
-                  </i>
-                </button>
+                <form role="form" method="post" enctype="multipart/form-data" action="/subscriptions">
+                  <input type="email" name="subscription_email" class="textarea text-center" placeholder="Email">
+                  <button class="btn subscribe_btn" type="submit">
+                    Subscribe 
+                    <i class="fa fa-long-arrow-right">
+                    </i>
+                  </button>
+                </form>
             </li>
           </ul>
           <ul class="social">

@@ -18,7 +18,7 @@ class CreateMagazinesTable extends Migration {
 			$table->string('magazine',50);
 			$table->integer('magazine_view')->default(0);
 			$table->integer('magazine_purchase')->default(0);
-			$table->integer('magazine_single_price')->nullable();
+			$table->integer('magazine_price')->nullable();
 			$table->softDeletes();
 			$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
 			$table->timestamp('updated_at');
