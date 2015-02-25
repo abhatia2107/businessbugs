@@ -32,7 +32,7 @@ class MagazinesController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		dd(Input::all());
 	}
 
 	/**

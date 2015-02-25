@@ -15,11 +15,11 @@
 	    		</div> 
 	    		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
 	    			<h4>Total Price: $50</h4>
-					<a class="btn btn-primary" role="button" href="#">Pay</a>
+					<a id="pay" class="btn btn-primary" role="button" href="/payments/store/2">Pay</a>
 	    		</div> 
 	  		</div>
 	  		<div class="panel-footer text-center">
-	  			<a class="btn btn-default" role="button" href="#">Subscribe<span class="glyphicon glyphicon-chevron-right"></span></a>
+	  			<a class="btn btn-default" role="button" href="/payments/store/1">Subscribe<span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
 		</div>
 	</div>

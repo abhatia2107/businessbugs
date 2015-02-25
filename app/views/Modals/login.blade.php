@@ -25,9 +25,9 @@
                     <div class="form-group rememberMe col-md-12 col-sm-12 col-xs-12">                               
                         <label class="control-label">
                             <input name="remember"  value="forever" checked="checked" type="checkbox">
-                            Remember Me 
-                        </label>                                                             
-                    </div>                
+                            Remember Me
+                        </label>
+                    </div>          
                     <div class="forgetPassword col-md-12 col-sm-12 col-xs-12">
                         <a href="/users/password/remind">Forgot Password?</a>
                     </div>

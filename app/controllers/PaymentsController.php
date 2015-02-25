@@ -21,6 +21,7 @@ class PaymentsController extends \BaseController {
 	 */
 	public function create()
 	{
+
 		return View::make('Payments.create');
 	}
 
@@ -30,31 +31,50 @@ class PaymentsController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store($id)
 	{
+		$user_id=Auth::id();
+		$user=User::find($user_id);
+		// dd($user);
+		$posted['amount']=50;
+		$posted['firstname']=$user->user_first_name;
+		$posted['email']=$user->email;
+		if(!($user->user_contact_no))
+			$posted['phone']='1';
+		else
+			$posted['phone']=$user->user_contact_no;
+		$posted['productinfo']="ok";
+		$posted['surl']=url("success");
+		$posted['furl']=url("failure");
+		$posted['service_provider']="payu_paisa";
 		// Merchant key here as provided by Payu
 	    $MERCHANT_KEY = "JBZaLc";
-
+	    $posted['key']=$MERCHANT_KEY;
 	    // Merchant Salt as provided by Payu
 	    $SALT = "GQs7yium";
 
 	    // End point - change to https://secure.payu.in for LIVE mode
 	    $PAYU_BASE_URL = "https://test.payu.in";
-		$action = '/payments/store';
+		// $action = '/payments/store';
 	    $formError = 0;
-
-	    $posted = array();
+	    // dd("test");
+	    // $posted = array();
 	    if(empty($posted['txnid'])) {
 	      // Generate random transaction id
+	      // dd(7);
 	      $txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
+	      $posted['txnid']=$txnid;
 	    } else {
+	    	// dd(8);
 	      $txnid = $posted['txnid'];
 	    }
+	    // dd($txnid);
 	    $hash = '';
-	    $posted=Input::all();
+	    // $posted=Input::all();
 		// dd($credentials);
 		// Hash Sequence
-		$hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10";
+		$hashSequence = "key|txnid|amount|productinfo|firstname|email";
+		// dd($hashSequence);
 		if(empty($posted['hash']) && sizeof($posted) > 0) {
 		  if(
 		          empty($posted['key'])
@@ -74,20 +94,27 @@ class PaymentsController extends \BaseController {
 			$hashVarsSeq = explode('|', $hashSequence);
 		    $hash_string = '';
 			foreach($hashVarsSeq as $hash_var) {
-		      $hash_string = isset($posted[$hash_var]) ? $posted[$hash_var] : '';
-		      $hash_string = '|';
+		      $hash_string .= isset($posted[$hash_var]) ? $posted[$hash_var] : '';
+		      $hash_string .= '|';
 		    }
 
-		    $hash_string = $SALT;
-
-
+		    $hash_string .= '||||||||||'.$SALT;
+		    $posted['hash_string']=$hash_string;
+		    // dd($hash_string);
 		    $hash = strtolower(hash('sha512', $hash_string));
+		    $posted['hash']=$hash;
+		    // dd($hash);
 		    $action = $PAYU_BASE_URL . '/_payment';
 		  }
 		} elseif(!empty($posted['hash'])) {
 		  $hash = $posted['hash'];
 		  $action = $PAYU_BASE_URL . '/_payment';
 		}
+		$url=$action;
+		$posted['action']=$url;
+		$posted['posted']=$posted;
+		// dd($posted);
+		return View::make('Payments.create',$posted);
 	}
 
 	/**

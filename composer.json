@@ -6,8 +6,10 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
+		"guzzlehttp/guzzle": "5.0.*@dev",
 		"nesbot/Carbon": "*",
-		"facebook/php-sdk-v4": "dev-master"
+		"zendframework/zend-http": "2.3.*@dev",
+		"facebook/php-sdk-v4": "4.1.*@dev"
 	},
 	"autoload": {
 		"classmap": [

@@ -1,48 +1,15 @@
-<html>
-  <head>
-  </head>
-  <body>
-    <h2>PayU Form</h2>
-    <br/>
-    <?php 
-    // Merchant key here as provided by Payu
-    $MERCHANT_KEY = "JBZaLc";
-
-    // Merchant Salt as provided by Payu
-    $SALT = "GQs7yium";
-
-    // End point - change to https://secure.payu.in for LIVE mode
-    $PAYU_BASE_URL = "https://test.payu.in";
-
-    $action = '/payments/store';
-    $formError = 0;
-
-    $posted = array();
-    if(empty($posted['txnid'])) {
-      // Generate random transaction id
-      $txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
-    } else {
-      $txnid = $posted['txnid'];
-    }
-    $hash = '';
-    
-    
-    ?>
-    <?php if($formError) { ?>
-	   
-      <span style="color:red">Please fill all mandatory fields.</span>
-      <br/>
-      <br/>
-    <?php } ?>
-    <form action="<?php echo $action; ?>" method="post" name="payuForm">
-      <input type="hidden" name="key" value="<?php echo $MERCHANT_KEY ?>" />
-      <input type="hidden" name="hash" value="<?php echo $hash ?>"/>
-      <input type="hidden" name="txnid" value="<?php echo $txnid ?>" />
+@extends('Layouts.layout')
+@section('content')
+    <form action="{{$posted['action']}}" method="post" name="payuForm">
+      <input type="hidden" name="key" value="<?php echo $posted['key'] ?>" />
+      <input type="hidden" name="hash" value="<?php echo $posted['hash'] ?>"/>
+      <input type="hidden" name="txnid" value="<?php echo $posted['txnid'] ?>" />
       <table>
         <tr>
           <td><b>Mandatory Parameters</b></td>
         </tr>
         <tr>
+          <input name="hash_string" type="hidden" value="<?php echo (empty($posted['hash_string'])) ? '' : $posted['amount'] ?>" />
           <td>Amount: </td>
           <td><input name="amount" value="<?php echo (empty($posted['amount'])) ? '' : $posted['amount'] ?>" /></td>
           <td>First Name: </td>
@@ -117,11 +84,8 @@
           <td><input name="pg" value="<?php echo (empty($posted['pg'])) ? '' : $posted['pg']; ?>" /></td>
         </tr>
         <tr>
-          <?php if(!$hash) { ?>
             <td colspan="4"><input type="submit" value="Submit" /></td>
-          <?php } ?>
         </tr>
       </table>
     </form>
-  </body>
-</html>
+@stop

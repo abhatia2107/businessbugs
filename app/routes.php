@@ -82,7 +82,7 @@ Route::group(array('before' => "auth|admin"), function() {
 Route::group(array('before' => "auth|admin"), function() {	
 	Route::get('/payments','PaymentsController@index');
 	Route::get('/payments/create','PaymentsController@create');
-	Route::post('/payments/store','PaymentsController@store');
+	Route::get('/payments/store/{id}','PaymentsController@store');
 	Route::post('/payments/update/{id}','PaymentsController@update');
 	Route::get('/payments/enable/{id}','PaymentsController@enable');
 	Route::get('/payments/disable/{id}','PaymentsController@disable');
