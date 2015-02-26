@@ -12,12 +12,13 @@ class PaymentsController extends \BaseController {
 		$user=User::find($user_id);
 		$magazine=Magazine::find($id);
 	    $txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
-	    $hashSequence = "key|txnid|amount|productinfo|firstname|email";
+	    $hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1";
 		$posted['service_provider']=$service_provider;
 		$posted['key']=$MERCHANT_KEY;
 		$posted['txnid']=$txnid;
 		$posted['amount']=$magazine->magazine_price;
 		$posted['productinfo']=$magazine->magazine;
+		$posted['udf1']=$magazine->id;
 		$posted['firstname']=$user->user_first_name;
 		$posted['lastname']=$user->user_last_name;
 		$posted['email']=$user->email;
@@ -31,7 +32,8 @@ class PaymentsController extends \BaseController {
 	      $hash_string .= isset($posted[$hash_var]) ? $posted[$hash_var] : '';
 	      $hash_string .= '|';
 	    }
-	    $hash_string .= '||||||||||'.$SALT;
+	    $hash_string .= '|||||||||'.$SALT;
+	    // dd($hash_string);
 		$posted['hash_string']=$hash_string;
 		$hash = strtolower(hash('sha512', $hash_string));
 		$posted['hash']=$hash;
@@ -44,20 +46,35 @@ class PaymentsController extends \BaseController {
 	{
 	    $SALT = "GQs7yium";
 		$credentials=Input::all();
+		$pathToFile='/home/abhishek/Downloads/test.pdf';
 		// dd($credentials);
-		$hashSequence = "email|firstname|productinfo|amount|txnid|key";
+		$hashSequence = "udf1|email|firstname|productinfo|amount|txnid|key";
 		$hashVarsSeq = explode('|', $hashSequence);
 	    // $hash_string = ''
 	    $hash_string = $SALT.'|';
-	    $hash_string .= $credentials['status'].'||||||||||';
+	    $hash_string .= $credentials['status'].'|||||||||';
 	    foreach($hashVarsSeq as $hash_var) {
 	      $hash_string .= '|';
 	      $hash_string .= isset($credentials[$hash_var]) ? $credentials[$hash_var] : '';
 	    }
+	    $magazine=Magazine::find($credentials['udf1']);
+	    $magazine->magazine_purchase++;
+	    $magazine->save();
 	    $hash = strtolower(hash('sha512', $hash_string));
 	    // dd($hash_string);
-		if($hash==$credentials['hash'])
+		if($hash==$credentials['hash']){
+			$email=$credentials['email'];
+			$name=$credentials['firstname'].$credentials['lastname'];
+			$subject=Lang::get('subscription.subscribed');
+			$data = array();
+			Mail::later(15,'Emails.magazine.single', $data, function($message) use ($email, $name, $subject, $pathToFile)
+			{
+		    	// $message->from('contact@businessbugs.in', 'Contact');
+				$message->to($email,$name)->subject($subject);
+			    $message->attach($pathToFile);
+			});
 			return View::make('Payments.success');
+		}
 		else
 			return 'CheckSum Error. Invalid Transaction. Please try again';
 	}
@@ -67,11 +84,11 @@ class PaymentsController extends \BaseController {
 	    $SALT = "GQs7yium";
 		$credentials=Input::all();
 		// dd($credentials);
-		$hashSequence = "email|firstname|productinfo|amount|txnid|key";
+		$hashSequence = "udf1|email|firstname|productinfo|amount|txnid|key";
 		$hashVarsSeq = explode('|', $hashSequence);
 	    // $hash_string = ''
 	    $hash_string = $SALT.'|';
-	    $hash_string .= $credentials['status'].'||||||||||';
+	    $hash_string .= $credentials['status'].'|||||||||';
 	    foreach($hashVarsSeq as $hash_var) {
 	      $hash_string .= '|';
 	      $hash_string .= isset($credentials[$hash_var]) ? $credentials[$hash_var] : '';

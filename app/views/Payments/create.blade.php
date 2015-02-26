@@ -4,6 +4,7 @@
     <input type="hidden" name="key" value="{{$posted['key']}}">
     <input type="hidden" name="hash" value="{{$posted['hash']}}">
     <input type="hidden" name="txnid" value="{{$posted['txnid']}}">
+    <input type="hidden" name="udf1" value="{{$posted['udf1']}}">
     <input type="hidden" name="amount" value="{{$posted['amount']}}">
     <input type="hidden" name="surl" value="{{$posted['surl']}}">
     <input type="hidden" name="furl" value="{{$posted['furl']}}">

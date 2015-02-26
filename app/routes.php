@@ -132,7 +132,6 @@ Route::group(array('before' => "guest-or-admin"), function() {
 	Route::get('/users/password/remind','RemindersController@getRemind');
 	Route::get('/users/password/reset/{token}','RemindersController@getReset');
 	//Routes for facebook signin of user
-
 	Route::get('/login/fb','UsersController@loginFb');
 	Route::get('/login/fb/callback','UsersController@loginFbCallback');
 });
@@ -146,9 +145,9 @@ Route::group(array('before' => "csrf"), function() {
 	Route::post('/users/password/reset/submit','RemindersController@postReset');
 });
 
-Route::get('/home', function()
+Route::get('/services', function()
 {
-return View::make('Miscellaneous.home');
+return View::make('Miscellaneous.services');
 });
 
 Route::get('/aboutus', function()
@@ -174,4 +173,19 @@ return View::make('Miscellaneous.support');
 Route::get('/terms', function()
 {
 return View::make('Miscellaneous.terms');
+});
+
+Route::get('/team', function()
+{
+return View::make('Miscellaneous.team');
+});
+
+Route::get('/food-mad', function()
+{
+return View::make('Miscellaneous.foodmad');
+});
+
+Route::get('/we-are-hiring', function()
+{
+return View::make('Miscellaneous.hiring');
 });

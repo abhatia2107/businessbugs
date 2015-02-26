@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/jquery-ui-1.11.2.min.css" id="jquery-ui-style-css" media="all">
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrapValidator.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/assets/css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/mystyle2.css">
 
     <script src="/assets/js/jquery-1.11.2.min.js"></script>
     <script src="/assets/js/jquery-2.1.1.min.js"></script>

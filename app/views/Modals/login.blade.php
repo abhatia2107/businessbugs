@@ -41,7 +41,8 @@
     </div>
 </div>
 <script type="text/javascript" >
-    $(document).ready(function(){
+    /*JavaScript not working.*/
+    /*$(document).ready(function(){
         
         $('.login').bootstrapValidator({
             message: 'This value is not valid',
@@ -77,11 +78,11 @@
                         },
                         emailAddress: {
                             message: 'The input is not a valid email address'
-                        }
+                        },
                     }
                 }
             }
         });
-    });
+    });*/
 </script>
 @show
