@@ -9,23 +9,6 @@
 		background-size: cover;
 		}
 		
-		.button {
-			background-image: url("http://www.scoopwhoop.com/wp-content/themes/scoop_whoop/images/logo.jpg");
-			height: 100px;
-			width:100px;
-			-moz-border-radius: 8px;
-		  -webkit-border-radius: 8px;
-		  border-radius: 8px;
-		 
-		    transition: .5s ease;
-		    top: 10px;
-		    left: -50px;
-		    right: -1000px;
-		    bottom: 0px;
-
-		  
-			background-position: center;
-		}
 		.button1
 		{
 			text-align: center;
@@ -61,14 +44,15 @@
 			}
 		</style>
 		<div class="main-container background">
-			
-			<button class="button"></button>
-		<div class="maincontent">
-		<h1><large>businessbugs.in? </large></h1>
-			<p> WE PLAN TO REACH OUT 20 MILLION+</p>
-			<p> PEOPLE EVERY MONTH.</p>
-			<button class="button1 btn-grp">GIVE ME ANOTHER REASON </button>
-			<button class="button1 btn-grp">I AM CONVINCED </button>
+			<div class="maincontent">
+				<h1>WHY SHOULD I WORK AT </h1>
+				<h1>businessbugs.in?</h1>
+				<p> WE BELIEVE IN CREATING ENTREPRENEURS, NOT EMPLOYEES.</p>
+				<p> IF YOU'RE CONVINCED WITH US AND WANT TO GROW ALONG WITH US</p>
+				<p> SEND YOUR PROFILE AT</p>
+				<p><a href="mailto:careers@businessbugs.in"> careers@businessbugs.in</a></p>
+				<!-- <button class="button1 btn">GIVE ME ANOTHER REASON </button> -->
+				<!-- <button class="button1 btn">I AM CONVINCED </button> -->
 			</div>
 		</div>
 @stop
