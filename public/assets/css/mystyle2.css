@@ -40,6 +40,7 @@ font-color:#5b3839;
 .carousel .item img{
 	height: 500px;
 	width:100%;
+	
 }
 .img-text{
 	background:transparent;
@@ -96,9 +97,9 @@ margin-bottom: 20px;
 .footer{
 	background: #CECECE;
 	padding:2%;
+	padding-bottom: 0px;
 }
 .jumbotron{
-	
 	padding:10px;
 	text-align: left;
 	font-weight:bold;
