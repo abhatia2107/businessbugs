@@ -52,14 +52,21 @@ font-color:#5b3839;
 	font-size: 35px;
 	font-weight: normal;
 }
+.img-text p{
+	color: red;
+}
 .mid-text{
 	text-align: justify;
 	font-size: 22px;
 }
 .center_title{
-	background: rgb(0,300,600);
+	background: none;
+	/*border-bottom: 1px solid gray;*/
 	height:40px;
 	padding-left: 10px;
+}
+.head_content{
+	padding-top:0px;
 }
 .related a{
 	display: inline;

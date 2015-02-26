@@ -114,7 +114,7 @@ ENJOY
 <section class="related">
 <div class="center_title">
 <h3>OUR FIRST PRODUCT</h3>
-<div class="title_icon_1"></div>
+<!-- <div class="title_icon_1"></div> -->
 <div class="head_content" style="text-align:left; float:left"><strong>Simple yet Profound Entrepreneur E magazine - Business Bugs</strong></div>
 </div>
 <div class="body1">
