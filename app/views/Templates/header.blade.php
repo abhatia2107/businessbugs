@@ -3,8 +3,8 @@
 	<div class="navbar-header"> 
 		<div clas="main-container">
 			<div class="logo pull-left col-md-4 col-sm-4 col-xs-12">
-				<a href="#">
-					<img src="/assets/images/businessbugs_logo.jpg" alt="Brand">
+				<a href="/">
+					<img src="/assets/images/businessbugs_logo.jpg" alt="Business Bugs">
 				</a>
             </div>
 			<div class="pull-right col-md-8 col-sm-8 col-xs-12">
@@ -16,22 +16,22 @@
       			<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav nav-tabs">
 						<li>
-							<a href="/">ABOUT US</a>
+							<a href="/aboutus">ABOUT US</a>
 						</li>
 						<li>
-							<a href="/">TEAM</a>
+							<a href="/team">TEAM</a>
 						</li>
 						<li>
-							<a href="/">PRODUCTS &#38; SERVICES</a>
+							<a href="/services">PRODUCTS &#38; SERVICES</a>
 						</li>
 						<li>
-							<a href="/">WE ARE HIRING</a>
+							<a href="/we-are-hiring">WE ARE HIRING</a>
 						</li>
 						<li>
-							<a href="/">CONTACT</a>
+							<a href="/contactus">CONTACT</a>
 						</li>
 						<li>
-							<a href="/">FOOD MAD</a>
+							<a href="/food-mad">FOOD MAD</a>
 						</li>
 					</ul>
 				</div>
