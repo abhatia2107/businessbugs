@@ -157,7 +157,7 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM  IS HERE</h1>
                 </div>
             </a>
         @endforeach
-        
+    </div>
     <a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
         <img width="257" height="300" src="{{asset('/assets/images/cover.jpg')}}" class="attachment-medium wp-post-image" alt="unbeliveablish">
         <section class="img-text">
@@ -166,7 +166,7 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM  IS HERE</h1>
         <div class="style_buy">Buy</div>
     </a>
     </section>
- 
+    </div>
 
         <div class="clear">
         </div>   
