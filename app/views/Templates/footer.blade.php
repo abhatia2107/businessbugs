@@ -1,7 +1,7 @@
 @section('footer')
 <footer>
   <div class="footer">
-    <div class="container">
+    <div class="main-container">
       <div class="row">
       
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">

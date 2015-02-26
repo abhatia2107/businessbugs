@@ -13,7 +13,7 @@
     <input type="hidden" name="productinfo" value="{{$posted['productinfo']}}">
 
     <td>First Name: </td>
-    <input name="firstname" value="{{$posted['firstname']}}">
+    <input type="text" name="firstname" value="{{$posted['firstname']}}">
     <td>Last Name: </td>
     <input name="lastname" value="{{$posted['lastname']}}">
     <td>Email: </td>
@@ -21,4 +21,5 @@
     <td>Phone: </td>
     <input name="phone" value="{{$posted['phone']}}">
     <input type="submit" value="Submit" />
+    </form>
 @stop

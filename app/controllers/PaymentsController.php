@@ -49,7 +49,7 @@ class PaymentsController extends \BaseController {
 	    $SALT = "GQs7yium";
 		$user=exec('whoami');
 		$credentials=Input::all();
-		$pathToFile='/home/'.$user.'/Projects/businessbugs/public/assets/magazines/'.$credentials['productinfo'].'.pdf';
+		$pathToFile='/home/'.$user.'/Projects/businessbugs/public/assets/magazines/March.pdf';
 		// dd($credentials);
 		$hashSequence = "udf1|email|firstname|productinfo|amount|txnid|key";
 		$hashVarsSeq = explode('|', $hashSequence);
@@ -68,7 +68,7 @@ class PaymentsController extends \BaseController {
 		if($hash==$credentials['hash']){
 			$email=$credentials['email'];
 			$name=$credentials['firstname'].$credentials['lastname'];
-			$subject=Lang::get('subscription.subscribed');
+			$subject=Lang::get('payments.purchase',$credentials['productinfo']);
 			$data = array(
 				'magazine'=>$credentials['productinfo'],
 				'name'=>$name,
