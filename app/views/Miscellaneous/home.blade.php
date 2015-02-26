@@ -15,7 +15,6 @@ Meet Khurshed Batliwala  THE ENTREPRENEURIAL INSPIRATION<br>
 Read what BAWA has to say on 'Entrepreneurship &#38; Meditation'
 </p>
 </section>
-</img>
 </div>
 <div class="item">
 <img alt="Second slide" src="/assets/images/Home Slider/modi.jpg">
@@ -25,7 +24,6 @@ MODINOMICS – How Modi is going to revive Indian economy
 Financial Genius Ankit Gupta on what Modi has done &#38; should do in FY 2015. The most simple yet profound analysis.
 </p>
 </section>
-</img>
 </div>
 <div class="item">
 <img alt="Third slide" src="/assets/images/Home Slider/entrepreneur.png">
@@ -35,7 +33,6 @@ ENTREPRENEURSHIP – WHY, WHEN, WHERE – The never asked question
 We get in to the simplest details of entrepreneurship in Indian scenario.  
 </p>
 </section>
-</img>
 </div>
 </div>
 
@@ -131,4 +128,7 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM  IS HERE</h1>
         </section>
         <div class="style_buy">Buy</div>
     </a>
+    </section>
+    </div>
+    </div>
 @endsection

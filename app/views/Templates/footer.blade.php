@@ -1,5 +1,4 @@
 @section('footer')
-<footer>
   <div class="footer">
     <div class="main-container">
       <div class="row">
@@ -103,6 +102,4 @@
       </div><!--/.row-->
     </div><!--/.container-->
   </div><!--/.footer-->
-  
-</footer>
 @show
