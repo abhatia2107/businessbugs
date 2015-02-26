@@ -1,8 +1,7 @@
 @extends('Layouts.layout')
 @section('content')
-	<div>
 		<style type="text/css">
-		body{ 
+		.background{ 
 		background: url('http://s4.scoopwhoop.com/wah/img/weareghiring.jpg'); no-repeat center center fixed; 
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -17,7 +16,7 @@
 			-moz-border-radius: 8px;
 		  -webkit-border-radius: 8px;
 		  border-radius: 8px;
-		  position:relative;
+		 
 		    transition: .5s ease;
 		    top: 10px;
 		    left: -50px;
@@ -31,12 +30,10 @@
 		{
 			text-align: center;
 			background-color: yellow;
-			
 			width:211px;
 			-moz-border-radius: 26px;
 		  -webkit-border-radius: 26px;
 		  border-radius: 26px;
-		  position: relative;
 		    bottom:-240px;
 			    top:150px;
 			    left:280px;
@@ -46,8 +43,6 @@
 			    line-height: 29px;
 			}
 			h1{
-				position:relative;
-			    text-align: center;
 			    top:80px;
 			    bottom:-260px;
 			    font-size: 72px;
@@ -55,27 +50,25 @@
 			    
 			}
 			p{
-				position:relative;
 				top:110px;
 				bottom:-280px;
 				left:250px;
 				font-size: 30px;
 				color:yellow;
 			}
+			.maincontent{
+				text-align: center;
+			}
 		</style>
-		<div class="container">
-
-		<button class="button">
-
-		</button>
-		</div>
-
-
+		<div class="main-container background">
+			
+			<button class="button"></button>
+		<div class="maincontent">
 		<h1><large>businessbugs.in? </large></h1>
-		<p> WE PLAN TO REACH OUT 20 MILLION+</p>
-
-		<p align="centre"> PEOPLE EVERY MONTH.</p>
-		<button class="button1 btn-grp">GIVE ME ANOTHER REASON </button>
-		<button class="button1 btn-grp" position="relative">I AM CONVINCED </button>
-	</div>
+			<p> WE PLAN TO REACH OUT 20 MILLION+</p>
+			<p> PEOPLE EVERY MONTH.</p>
+			<button class="button1 btn-grp">GIVE ME ANOTHER REASON </button>
+			<button class="button1 btn-grp">I AM CONVINCED </button>
+			</div>
+		</div>
 @stop
