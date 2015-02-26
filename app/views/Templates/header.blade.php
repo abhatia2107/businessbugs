@@ -1,4 +1,5 @@
 @section('header')
+
 	<div class="navbar-header"> 
 		<div clas="main-container">
 			<div class="logo pull-left col-md-4 col-sm-4 col-xs-12">
@@ -80,4 +81,5 @@
 			</div>
 		</div>	
 	</div>    
-@show
+
+	@show

@@ -79,7 +79,7 @@ Route::group(array('before' => "auth|admin"), function() {
 });
 
 
-Route::group(array('before' => "auth|admin"), function() {	
+Route::group(array('before' => "auth"), function() {	
 	Route::get('/payments','PaymentsController@index');
 	Route::get('/payments/create/{id}','PaymentsController@create');
 	Route::post('/payments/success','PaymentsController@success');
@@ -88,7 +88,7 @@ Route::group(array('before' => "auth|admin"), function() {
 });
 
 
-Route::group(array('before' => "auth|admin"), function() {
+Route::group(array('before' => "auth"), function() {
 	//Route for SubscriptionsController
 	Route::get('/subscriptions','SubscriptionsController@index');
 	Route::get('/subscriptions/enable/{id}','SubscriptionsController@enable');

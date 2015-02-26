@@ -1,138 +1,95 @@
 @extends('Layouts.layout')
+@section('pagestylesheet')
+  <link href="/css/bootstrap/css/jquery-ui.css" rel="stylesheet">
+@stop
 @section('content')
-<div class="wrapper whitebg contact-us">
-  <div class="container main-container ">
-    <div class="row innerPage">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        
-        <div class="row userInfo">
-          
-          <div class="col-xs-12 col-sm-12">
-            
-            <h1 class="title-big text-center section-title-style2">
-              <span> Contact us </span>
-            </h1>
-            
-            <p class="lead text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-            </p>
-            
-            <hr>
-            
-            <div class="row">
-            
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                
-                <h3 class="block-title-5">
-                  Customer care 
-                </h3>
-                
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  
-                  <br>
-                  <strong>
-                    Phone number
-                  </strong>
-                  : 	+88-01680531352
-                  <br>
-                  <strong>
-                    Email us
-                  </strong>
-                  : 	contact@tanimdesign.net
-                </p>
 
-                
-              </div>
-              
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                
-                <h3 class="block-title-5">
-                  Complaint 
-                </h3>
-                
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus
-                  
-                  <br>
-                  <strong>
-                    Phone number
-                  </strong>
-                  : 	+88-01680531352
-                  <br>
-                  <strong>
-                    Email us
-                  </strong>
-                  : 	sales@tanimdesign.net
-                </p>
-                
-                
-              </div>
-              
-              <div style="clear:both"> </div>
-              <hr>
-              <div style="clear:both"> </div>
-              
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <h3 class="block-title-5">
-                  Feedback 
-                </h3>
-                
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus 
-                  <email>
-                    feedback@tanimdesign.net
-                  </email>
-                  
-                  <br>
-                  <strong>
-                    Email us
-                  </strong>
-                  : 	feedback@tanimdesign.net
-                </p>
-                
-              </div>
-              
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                <h3 class="block-title-5">
-                  Other Enquiries 
-                </h3>
-                
-                <p>
-                  <strong>
-                    Corporate Sales
-                  </strong>
-                  : 	Corporate@tanimdesign.net
-                  <br>
-                  <strong>
-                    Careers
-                  </strong>
-                  : 	Careers@tanimdesign.net
-                  <br>
-                  <strong>
-                    Press Relations
-                  </strong>
-                  : 	pr@tanimdesign.net
-                  <br>
-                </p>
-                
-              </div>
-              
-            </div><!--/.row-->
-   		</div>
-          
-          
-          
-          
-          
-          
-        </div> <!--/.row  ||  -->
-        
+<div class="container main-container headerOffset">
+<div class="main container">
+    <div class="col-md-5 col-sm-7 col-xs-12">
+      <form  role="form" id="support" method="post" enctype="multipart/form-data" action="/feedbacks/store">
+        <div class="form-group">
+          <h3 class="heading">Submit a request/feedback/complaint</h3>
+        </div>
+      <div class="form-group">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <label for="feedback_email">
+                    Email
+                <span class="required">*</span>
+                </label>
+                <input type="text" class="form-control"  placeholder="Email" name="feedback_email" id="feedback_email">
       </div>
-    </div>  <!--/row || innerPage end-->
-    <div style="clear:both"> </div>
-  </div><!-- ./main-container -->
-  <div class="gap"></div>
-</div><!-- /main-container -->
+      <div class="form-group">
+          <label for="feedback_subject">
+                    Subject
+                    <span class="required">*</span>
+                </label>
+                <input type="text" class="form-control"  placeholder="Subject of the issue" name="feedback_subject" id="feedback_subject">
+      </div>
+      <div class="form-group">
+          <label for="feedback_description">
+                    Description
+                    <span class="required">*</span>
+                </label>
+                <textarea rows="5" class="form-control"  placeholder="Tell us more about the issue." name="feedback_description" id="feedback_description"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      <div class="box-content">
+          <h6>Submit a request for assistance and we'll notify you as soon as possible.</h6>
+      </div>
+    </form>
+    </div>
+  </div>
+  </div>
+  <!--/row-->
+  
+  <div style="clear:both"></div>
+</div>
 
+@stop
+@section('pagejavascript')
+    <script src="/css/bootstrap/js/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            $('#support').bootstrapValidator({
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    feedback_email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The email is required and cannot be empty'
+                            },
+                            emailAddress: {
+                                message: 'The input is not a valid email address'
+                            }
+                        }
+                    },
+                    feedback_subject: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The subject is required and cannot be empty'
+                            }
+                    }},
+
+                    feedback_description: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The description is required and cannot be empty'
+                            }
+                    }},
+
+                }
+            });
+            
+            
+        });
+    </script>
 @stop

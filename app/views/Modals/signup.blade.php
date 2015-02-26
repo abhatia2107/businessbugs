@@ -54,7 +54,7 @@
                         <div class="form-group required">
                             <label for="user_location" class="col-sm-3 control-label ">City<sup>*</sup></label>
                             <div class="col-sm-8">
-                                <input type="tel" class="form-control " name="user_location"  id="user_location" value="@if(isset($userDetails)){{$userDetails->user_location}}@else{{Input::old('user_location')}}@endif">
+                                <input type="text" class="form-control " name="user_location"  id="user_location" value="@if(isset($userDetails)){{$userDetails->user_location}}@else{{Input::old('user_location')}}@endif">
                             </div>
                         </div>
                     </div><br>
