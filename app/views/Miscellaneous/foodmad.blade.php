@@ -3,7 +3,7 @@
 <div class="main-container jumbotron">
 <h3>
 
-I Love food. We love food. We all love food. We all are Food Mad.
+<strong>I Love food. We love food. We all love food. We all are Food Mad.</strong><br>
 
 This is going to be one of the most unique contests in the world around.  Just 
 
@@ -17,9 +17,9 @@ The Food fever is on the rise. We will raise the temperatures further.  The reci
 
 for success is this contest is very simple – The recipe of the place at which you are 
 
-eating has to be very tasty. 
+eating has to be very tasty.<br>
 
-CONTEST –<br>
+<strong>CONTEST –<br>
 
 1) Choose a less known yet tasty eatery or choose a food item which is rarely 
 
@@ -44,6 +44,7 @@ stories.<br>
 be told to you in 24 hours of your submission.<br>
 
 9) Remember we don’t publish until you get compensated for the same.<br>
+</strong>
 </h3>
 </div>
 @stop
