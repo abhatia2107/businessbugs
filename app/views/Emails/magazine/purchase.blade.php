@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+<!-- When user subscribed for the email from our website, this is a confirmation email. -->
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h2>Business Bugs</h2>
+
+		<div>
+			You have successfully purchased.<br/>
+			<!-- your subscription email body -->
+		</div>
+	</body>
+</html>
+<!DOCTYPE html>
 <html>
 	<head>
 	</head>
@@ -14,17 +29,7 @@
 					Dear {{ $name}},
 				</h1>
 				<p style="font-size:120%; color:#000;">
-					We're ready to activate your account. All we need to do is make sure this is your email address.
-				</p>
-				<div style="text-align:center;">
-					<a href="{{ URL::to('/users/registration/verify/'.$userId.'/'.$confirmationcode) }}">
-						<button type="button" style="color: #fff; background-color: #5cb85c;border-color: #4cae4c;color: #fff;background-color: #449d44;border-color: #398439;background-color: #5cb85c;padding: 10px 16px;font-size: 18px;line-height: 1.33;border-radius: 6px; ">
-							VERIFY ADDRESS
-						</button>
-					</a>
-				</div>
-				<p style="font-size:85%; color:#444;">
-					Having Troubles? Copy this url to your browser:<a href="{{ URL::to('/users/registration/verify/'.$userId.'/'.$confirmationcode) }}">{{ URL::to('/users/registration/verify/'.$userId.'/'.$confirmationcode) }}</a>
+					Thanks for purchasing Business Bugs {{$magazine}}. Please find attached your copy of business bugs.
 				</p>
 				<p style="font-size:85%; color:#444;">
 					For any queries, reach out to us at: <a href="mailto:contact@businessbugs.in">contact@businessbugs.in</a>

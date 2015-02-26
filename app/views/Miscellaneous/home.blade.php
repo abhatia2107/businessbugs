@@ -68,7 +68,7 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM  IS HERE</h1>
                     	<div class="panel">
                     	<div class="panel-body">
                     	<div class="thumbnail">
-                    	<img src="/assets/images/IMG_2176.JPG">
+                    	<img src="/assets/images/learn.jpg" alt="Learn" width="150 px" height="50 px">
                     	</div>
                     	<div class="panel-footer text-center">
                     	LEARN
@@ -80,7 +80,7 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM  IS HERE</h1>
                     	<div class="panel">
                     	<div class="panel-body">
                     	<div class="thumbnail">
-                    	<img src="/assets/images/IMG_2176.JPG">
+                    	<img src="/assets/images/earn.jpg" alt="Earn" width="113 px" height="50px">
                     	</div>
                     	<div class="panel-footer text-center">
                     	EARN
@@ -92,7 +92,7 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM  IS HERE</h1>
                     	<div class="panel">
                     	<div class="panel-body">
                     	<div class="thumbnail">
-                    	<img src="/assets/images/IMG_2176.JPG">
+                    	<img src="/assets/images/enjoy.jpg" alt="Enjoy" width="150 px" height="50 px">
                     	</div>
                     	<div class="panel-footer text-center">
                     	ENJOY
@@ -101,8 +101,9 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM  IS HERE</h1>
                     	</div>
                     	</div>
                     </p>
-<p class="mid-text"><strong>BUSINESS BUGS</strong> covers the gap between 'our skills' & 'making our skills profitable'. We endeavor to define entrepreneurship as a new approach of life. Be it advertising on a platform & network as ours or getting knowledge about various business domains or making writing a profitable & viable profession; we will promote entrepreneurship in a way like nobody does.
-</p>
+                <p class="mid-text">
+                    <strong>BUSINESS BUGS</strong> covers the gap between 'our skills' &#38; 'making our skills profitable'. We endeavor to define entrepreneurship as a new approach of life. Be it advertising on a platform & network as ours or getting knowledge about various business domains or making writing a profitable & viable profession; we will promote entrepreneurship in a way like nobody does.
+                </p>
 
  
                 </main>

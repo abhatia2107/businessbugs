@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="description" content="Business Bugs Website">
-    <meta name="author" content="Abhishek Bhatia, Shefali Agarwal">
+    <meta name="author" content="Abhishek Bhatia, Shefali Agarwal, Prerna Jain, Kuldeep Meena">
     <title>Business Bugs</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.min.css">

@@ -11,6 +11,8 @@ class PaymentsController extends \BaseController {
 		$user_id=Auth::id();
 		$user=User::find($user_id);
 		$magazine=Magazine::find($id);
+	    $magazine->magazine_view++;
+	    $magazine->save();
 	    $txnid = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 	    $hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1";
 		$posted['service_provider']=$service_provider;
@@ -45,8 +47,9 @@ class PaymentsController extends \BaseController {
 	public function success()
 	{
 	    $SALT = "GQs7yium";
+		$user=exec('whoami');
 		$credentials=Input::all();
-		$pathToFile='/home/abhishek/Downloads/test.pdf';
+		$pathToFile='/home/'.$user.'/Projects/businessbugs/public/assets/magazines/'.$credentials['productinfo'].'.pdf';
 		// dd($credentials);
 		$hashSequence = "udf1|email|firstname|productinfo|amount|txnid|key";
 		$hashVarsSeq = explode('|', $hashSequence);
@@ -66,8 +69,11 @@ class PaymentsController extends \BaseController {
 			$email=$credentials['email'];
 			$name=$credentials['firstname'].$credentials['lastname'];
 			$subject=Lang::get('subscription.subscribed');
-			$data = array();
-			Mail::later(15,'Emails.magazine.single', $data, function($message) use ($email, $name, $subject, $pathToFile)
+			$data = array(
+				'magazine'=>$credentials['productinfo'],
+				'name'=>$name,
+			);
+			Mail::later(15,'Emails.magazine.purchase', $data, function($message) use ($email, $name, $subject, $pathToFile)
 			{
 		    	// $message->from('contact@businessbugs.in', 'Contact');
 				$message->to($email,$name)->subject($subject);
