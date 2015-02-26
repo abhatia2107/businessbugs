@@ -1,8 +1,10 @@
 @extends('Layouts.layout')
 @section('content')
-	<pre>
-		Business Bugs E-Magazine
-		Website development & Designing
+	<div class="maincontainer jumbotron">
+	<h1>
+		Business Bugs E-Magazine<br>
+		Website development & Designing<br>
 		Advertise with us
-	</pre>
+	</h1>
+	</div>
 @stop

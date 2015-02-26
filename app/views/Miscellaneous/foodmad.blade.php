@@ -1,6 +1,7 @@
 @extends('Layouts.layout')
 @section('content')
-FOOD MAD
+<div class="main-container jumbotron">
+<h3>
 
 I Love food. We love food. We all love food. We all are Food Mad.
 
@@ -18,30 +19,31 @@ for success is this contest is very simple – The recipe of the place at which 
 
 eating has to be very tasty. 
 
-CONTEST –
+CONTEST –<br>
 
 1) Choose a less known yet tasty eatery or choose a food item which is rarely 
 
-on food menu.
+on food menu.<br>
 
-2) Eat at that place; relish the food & give the place an observation.
+2) Eat at that place; relish the food & give the place an observation.<br>
 
-3) Describe the food, the recipe, the owner, history, how to get at that place.
+3) Describe the food, the recipe, the owner, history, how to get at that place.<br>
 
-4)  Get clicked with the owner or the place.
+4)  Get clicked with the owner or the place.<br>
 
 5) Interview some people around & note their annotations & interesting 
 
-stories.
+stories.<br>
 
-6) Max 600 words.
+6) Max 600 words.<br>
 
-7) Send the same at Businessbugs@gmail.com
+7) Send the same at Businessbugs@gmail.com<br>
 
 8) The entry if selected gets paid if the same gets published. The same will 
 
-be told to you in 24 hours of your submission.
+be told to you in 24 hours of your submission.<br>
 
-9) Remember we don’t publish until you get compensated for the same.
-
+9) Remember we don’t publish until you get compensated for the same.<br>
+</h3>
+</div>
 @stop

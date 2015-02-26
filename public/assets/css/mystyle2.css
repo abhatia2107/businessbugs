@@ -97,3 +97,10 @@ margin-bottom: 20px;
 	background: #CECECE;
 	padding:2%;
 }
+.jumbotron{
+	
+	padding:10px;
+	text-align: left;
+	font-weight:bold;
+	margin:10px;
+}
