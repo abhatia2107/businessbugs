@@ -41,7 +41,8 @@ class PaymentsController extends \BaseController {
 		$posted['hash']=$hash;
 	    $posted['action'] = $PAYU_BASE_URL . '/_payment';
 	    // dd($posted['hash_string']);
-		return View::make('Payments.create',compact('posted'));
+		return View::make('Payments.create',compact('posted'))->with('success',Lang::get('payments.verify'));
+		// return Redirect::action('PaymentsController@index',$posted)->with('success',Lang::get('payments.verify'));
 	}
 
 	public function success()
@@ -68,7 +69,7 @@ class PaymentsController extends \BaseController {
 		if($hash==$credentials['hash']){
 			$email=$credentials['email'];
 			$name=$credentials['firstname'].$credentials['lastname'];
-			$subject=Lang::get('payments.purchase',$credentials['productinfo']);
+			$subject=Lang::get('payments.purchase',array('productinfo'=>$credentials['productinfo']));
 			$data = array(
 				'magazine'=>$credentials['productinfo'],
 				'name'=>$name,
@@ -79,7 +80,7 @@ class PaymentsController extends \BaseController {
 				$message->to($email,$name)->subject($subject);
 			    $message->attach($pathToFile);
 			});
-			return View::make('Payments.success');
+			return View::make('Payments.success')->with($credentials);
 		}
 		else
 			return 'CheckSum Error. Invalid Transaction. Please try again';
@@ -102,7 +103,7 @@ class PaymentsController extends \BaseController {
 	    $hash = strtolower(hash('sha512', $hash_string));
 	    // dd($hash_string);
 		if($hash==$credentials['hash'])
-			return View::make('Payments.failure');
+			return View::make('Payments.failure')->with($credentials);
 		else
 			return 'CheckSum Error. Invalid Transaction. Please try again';
 	}

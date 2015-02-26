@@ -1,0 +1,68 @@
+@section('pagejquery')
+    <script type="text/javascript">
+        $(document).ready(function(){     
+            $('#paymentsCreate').bootstrapValidator({
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                    
+                fields: {
+                    firstname: {
+                        message: 'The name is not valid',
+                        validators: {
+                            notEmpty: {
+                                message: 'The name is required and cannot be empty'
+                            },
+                            stringLength: {
+                                min: 2,
+                                message: 'The firstname must be more than 2 characters long'
+                            },
+                            regexp: {
+                                regexp: /^[a-zA-Z]+(?:(?:\\s+|-)[a-zA-Z]+)*$/,
+                                message: 'The username can only consist of alphabets'
+                            }
+                        }
+                    },
+                    lastname: {
+                        message: 'The last name is not valid',
+                        validators: {
+
+
+                            regexp: {
+                                regexp: /^[a-zA-Z]+(?:(?:\\s+|-)[a-zA-Z]+)*$/,
+                                message: 'The last name can only consist of alphabets'
+                            }
+                        }
+                    },
+                    phone: {
+                        message: 'Phone number is not valid',
+                        validators: {
+                            notEmpty: {
+                                message: 'The mobile number is required and cannot be empty'
+                            },
+
+                            regexp: {
+                                regexp: /^[0-9]{10}$/,
+                                message: 'The mobile number consists of 10 digits. Skip adding +91 or 0'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'The email is required and cannot be empty'
+                            },
+                            emailAddress: {
+                                message: 'The input is not a valid email address'
+                            }
+                        }
+                    },
+                }
+            });
+        });
+    </script>
+@stop
+    
