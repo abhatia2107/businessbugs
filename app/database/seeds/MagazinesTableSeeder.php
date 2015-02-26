@@ -13,7 +13,7 @@ class MagazinesTableSeeder extends Seeder {
 		{
 			Magazine::create([
 				'magazine' => $faker->Name,
-				'magazine_single_price' =>$faker->randomNumber(1000,5000),
+				'magazine_price' =>$faker->randomNumber(1000,5000),
 			]);
 		}
 	}

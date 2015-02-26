@@ -1,5 +1,30 @@
 @extends('Layouts.layout')
 @section('content')
+<style type="text/css">
+    .body1{
+        padding-left: 150px;
+        padding-top: 20px;
+
+
+    }
+    .container1 {
+        padding:15px;
+
+        height:415  px;
+        border:1px solid #cccccc;
+        margin-right: auto;
+        margin-left: auto;
+        background:#E6E6E6;
+        display: inline-block;
+    }
+
+    .thumbnail-container {
+  
+}
+.clear {
+    clear: both;
+}
+    </style>
 <div class="main-container">
             <div class="main wrapper clearfix">
 			
@@ -115,20 +140,44 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM  IS HERE</h1>
     <div class="title_icon_1"></div>
     <span class="head_content" style="text-align:left; float:left">Simple yet Profound Entrepreneur E magazine - Business Bugs</span>
     </div>
+    <div class="body1">
+    <a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
+            <div class="container1">
+            
+                <img src="/assets/images/cover.jpg"  height="265" width="265">
+                <div class="text-center">
+                    <h3>
+                        MARCH ISSUE
+                    </h3>
+                </div>
+                <h5>
+                    Price: Rs.30/-
+                </h5>
+                <div class="text-right">
+                    <button type="button" class="btn btn-primary">Buy</button>
+                </div>
+            </div>
+    </a>
 
     <a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
-        <img width="257" height="300" src="{{asset('/assets/images/cover.jpg')}}" class="attachment-medium wp-post-image" alt="unbeliveablish">
-        <section class="img-text">
-            ₹30
-        </section>
-        <div class="style_buy">Buy</div>
+        <div class="container1">
+            <img src="/assets/images/cover.jpg"  height="265" width="265">
+            <div class="text-center">
+                <h3>
+                    MARCH ISSUE
+                </h3>
+            </div>
+            <h5>
+                Price: Rs.30/-
+            </h5>
+            <div class="text-right">
+                <button type="button" class="btn btn-primary">Buy</button>
+            </div>
+        </div>
     </a>
-        
-    <a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
-        <img width="257" height="300" src="{{asset('/assets/images/cover.jpg')}}" class="attachment-medium wp-post-image" alt="unbeliveablish">
-        <section class="img-text">
-            ₹3000
-        </section>
-        <div class="style_buy">Buy</div>
-    </a>
+    <div class="clear">
+    </div>   
+    </div>
+
+
 @endsection
