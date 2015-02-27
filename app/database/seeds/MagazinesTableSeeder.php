@@ -6,7 +6,7 @@ class MagazinesTableSeeder extends Seeder {
 	{
 		Magazine::create([
 			'magazine' => 'March',
-			'magazine_price' =>'30',
+			'magazine_price' =>'300',
 		]);
 
 		Magazine::create([
