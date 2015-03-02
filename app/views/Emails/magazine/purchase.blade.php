@@ -1,19 +1,4 @@
 <!DOCTYPE html>
-<!-- When user subscribed for the email from our website, this is a confirmation email. -->
-<html lang="en-US">
-	<head>
-		<meta charset="utf-8">
-	</head>
-	<body>
-		<h2>Business Bugs</h2>
-
-		<div>
-			You have successfully purchased.<br/>
-			<!-- your subscription email body -->
-		</div>
-	</body>
-</html>
-<!DOCTYPE html>
 <html>
 	<head>
 	</head>
@@ -29,9 +14,26 @@
 					Dear {{ $name}},
 				</h1>
 				<p style="font-size:120%; color:#000;">
-					Thanks for purchasing Business Bugs {{$magazine}}. Please find attached your copy of business bugs.
+					Thanks for purchasing our {{$magazine}}. Please find attached your copy of business bugs.
 				</p>
+				<p style="font-size:120%; color:#000;">
+					Welcome to Business Bugs - India's First Entrepreneurship E - Commerce Platform. Business Bugs is the platform for the entrepreneurs  & by the entrepreneurs. 
+					@if($magazine!="Annual Subscription")
+						You can also buy our annual subscription for just ₹ 300 (38% off). 
+					@endif
+					Visit <a href="www.businessbugs.in">www.businessbugs.in</a> for more.
+				</p>
+				<p style="font-size:120%; color:#000;">
+					Regards<br/>
+					Shivam Trehan<br/>
+					Founder Business Bugs<br/>
+				<p style="font-size:120%; color:#000;">
 				<p style="font-size:85%; color:#444;">
+									
+					You can like our Facebook page www.facebook.com/businessbugs<br/>
+					You can like our Twitter page twitter.com/Business_Bugs<br/>
+					Business Bugs Blog businessbugs.blogspot.in<br/>
+					Official YouTube Channel Business Bugs. www.youtube.com/channel/UCWNvWJLEZ6eHBOZTRiZ1aoQ<br/>
 					For any queries, reach out to us at: <a href="mailto:contact@businessbugs.in">contact@businessbugs.in</a>
 				</p>
 				<p style="font-size:85%; text-align:center; color:#444;">

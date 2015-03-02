@@ -11,7 +11,7 @@ class MagazinesTableSeeder extends Seeder {
 
 		Magazine::create([
 			'magazine' => 'Annual Subscription',
-			'magazine_price' =>'480 38% OFF 300',
+			'magazine_price' =>'300',
 		]);
 	}
 

@@ -7,16 +7,15 @@
 
 	}
 	.container1 {
-	padding:10px;
-	height:auto;
-	max-width: 375px;
-	border:1px solid #cccccc;
-	margin-right: auto;
-	margin-left: auto;
-	background:#E6E6E6;
-	display: inline-block;
-	overflow:hidden;
-	
+		padding:10px;
+		height:auto;
+		max-width: 375px;
+		border:1px solid #cccccc;
+		margin-right: auto;
+		margin-left: auto;
+		background:#E6E6E6;
+		display: inline-block;
+		overflow:hidden;
 	}
 	
 	.clear {
@@ -179,8 +178,8 @@ ENJOY
 				</a>
 				{{--@endforeach--}}
 </div>
-</section>
 </div>
+</section>
 </div>
 	</div>
 @endsection
