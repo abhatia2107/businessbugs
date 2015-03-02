@@ -2,13 +2,12 @@
 
 	<div class="navbar-header"> 
 		<div clas="main-container">
-			<div class="logo pull-left col-md-4 col-sm-4 col-xs-12">
+			<div class="logo pull-left col-md-5 col-sm-5 col-xs-12">
 				<a href="/">
 					<img src="/assets/images/businessbugs_logo.jpg" alt="Business Bugs">
 				</a>
             </div>
-			<div class="header_right col-md-8 col-sm-8 col-xs-12">
-      			<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="header_right col-md-7 col-sm-7 col-xs-12">
 					<ul class="nav navbar-nav nav-tabs">
 						<li>
 							<a href="/aboutus">ABOUT US</a>
@@ -29,7 +28,6 @@
 							<a href="/food-mad">FOOD MAD</a>
 						</li>
 					</ul>
-				</div>
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<?php
 					$id=Auth::id();
@@ -66,7 +64,8 @@
 							</a>
 					    </li>
 					    <li> 
-							<a href="/users/logout"><span class="hidden-xs">Logout</span><i class="glyphicon glyphicon-log-out visible-xs"></i></a>
+							<!-- <a href="/users/logout"><span class="hidden-xs">Logout</span><i class="glyphicon glyphicon-log-out visible-xs"></i></a> -->
+							<a href="/users/logout">Logout</a>
 					    </li>
 					</ul>
 					    
