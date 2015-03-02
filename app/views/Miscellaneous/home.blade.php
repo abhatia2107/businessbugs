@@ -2,21 +2,27 @@
 @section('content')
 <style type="text/css">
 	.body1{
-	padding-left: 150px;
+	padding-left: 125px;
 	padding-top: 20px;
+
 	}
 	.container1 {
-	padding:15px;
-	height:415 px;
+	padding:10px;
+	height:auto;
+	max-width: 375px;
 	border:1px solid #cccccc;
 	margin-right: auto;
 	margin-left: auto;
 	background:#E6E6E6;
 	display: inline-block;
+	overflow:hidden;
+	
 	}
 	
 	.clear {
-	;
+	clear: both;
+	overflow: scroll;
+
 	}
 </style>
 <div class="main-container">
@@ -112,35 +118,43 @@ ENJOY
 </p>
 </main>
 <section class="related">
-<div class="center_title col-md-12 col-sm-12 col-xs-12">
-<h3>OUR FIRST PRODUCT</h3>
-<!-- <div class="title_icon_1"></div> -->
-<div class="head_content" style="text-align:left; float:left"><h4><strong>Simple yet Profound Entrepreneur E magazine - Business Bugs</strong></h4>
+			<div class="center_title col-md-12 col-sm-12 col-xs-12">
+				<h3>OUR FIRST PRODUCT</h3>
+					<!-- <div class="title_icon_1"></div> -->
+				<div class="head_content" style="text-align:left; float:left">
+				<h4>
+					<strong>
+						Simple yet Profound Entrepreneur E magazine - Business Bugs
+					</strong>
+				</h4>
+				</div>
+			</div>
+			<div class="body1 col-md-12 col-sm-12 col-xs-12">
+				@foreach($magazine as $data)
+				<a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
+					<div class="container1">
+						<img src="/assets/images/cover.jpg" height="450" width="350">
+						<div class="text-center">
+							<h3>
+								{{$data->magazine}}
+							</h3>
+						</div>
+						<h5>
+							Price: ₹ {{$data->magazine_price}}
+						</h5>
+						<div class="text-right">
+							<button type="button" class="btn btn-success">
+								Buy
+							</button>
+						</div>
+					</div>
+
+				</a>
+				@endforeach<br>
+			</div>
+		</section>
 </div>
-<div class="body1 col-md-12 col-sm-12 col-xs-12">
-@foreach($magazine as $data)
-<a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
-<div class="container1">
-<img src="/assets/images/cover.jpg" height="265" width="265">
-<div class="text-center">
-<h3>
-{{$data->magazine}}
-</h3>
-</div>
-<h5>
-Price: ₹ {{$data->magazine_price}}
-</h5>
-<div class="text-right">
-<button type="button" class="btn btn-primary">Buy</button>
-</div>
-</div>
-</a>
-@endforeach
-</div>
-</section>
-</div>
-</div>
-<div clas="gap"></div>
+	</div>
 @endsection
 
    
