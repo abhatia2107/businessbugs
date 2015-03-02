@@ -7,13 +7,8 @@
 					<img src="/assets/images/businessbugs_logo.jpg" alt="Business Bugs">
 				</a>
             </div>
-			<div class="pull-right col-md-8 col-sm-8 col-xs-12">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-	        		<span class="sr-only"> Toggle navigation </span> <span class="icon-bar"> </span> 
-	        		<span class="icon-bar"> </span> 
-	        		<span class="icon-bar"> </span> 
-      			</button>
-      			<div class="navbar-collapse collapse">
+			<div class="header_right col-md-8 col-sm-8 col-xs-12">
+      			<div class="col-md-12 col-sm-12 col-xs-12">
 					<ul class="nav navbar-nav nav-tabs">
 						<li>
 							<a href="/aboutus">ABOUT US</a>
@@ -35,7 +30,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-md-12 col-sm-12">
+				<div class="col-md-12 col-sm-12 col-xs-12">
 					<?php
 					$id=Auth::id();
 					if($id)
@@ -48,10 +43,10 @@
 				@if(!$id)
 					<ul class="nav navbar-nav nav-tabs">
 					    <li>
-					    	<a href="#" data-toggle="modal" data-target="#loginModal"><span class="hidden-xs">LogIn</span><i class="glyphicon glyphicon-log-in visible-xs"></i></a>
+					    	<a href="#" data-toggle="modal" data-target="#loginModal"><span>LogIn</span></a>
 					    </li>
 					    <li> 
-							<a href="#" data-toggle="modal" data-target="#signupModal"><span class="hidden-xs">Sign Up</span><i class="glyphicon glyphicon-user visible-xs"></i></a>	
+							<a href="#" data-toggle="modal" data-target="#signupModal"><span>Sign Up</span></a>	
 					    </li>
 					</ul>
 					    
