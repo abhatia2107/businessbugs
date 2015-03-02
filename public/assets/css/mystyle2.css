@@ -3,6 +3,7 @@ html{
 }
 body{
 	overflow-x:hidden;
+	font-family: oswald;
 }
 .main-container{
 	padding-bottom:5px;
