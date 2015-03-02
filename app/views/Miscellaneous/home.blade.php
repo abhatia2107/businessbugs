@@ -18,6 +18,14 @@
 	.clear {
 	;
 	}
+	.heading{
+		font-family:oswald; 
+		font-size: 3.438em;
+	}
+	.sub-heading{
+		font-family:oswald; 
+		font-size: 2.3em;
+	}
 </style>
 <div class="main-container">
 <div class="main wrapper clearfix">
@@ -68,7 +76,8 @@ Next
 </span>
 </a>
 </div>
-INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
+</h1>
+<h1 class="heading">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
 <p>
 <div class="col-lg-4">
 <div class="panel">
@@ -76,7 +85,7 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
 <div class="thumbnail">
 <img src="/assets/images/learn.jpg" alt="Learn" width="150 px">
 </div>
-<div class="text-center">
+<div class="text-center sub-heading">
 LEARN
 </div>
 </div>
@@ -88,7 +97,7 @@ LEARN
 <div class="thumbnail">
 <img src="/assets/images/earn.jpg" alt="Earn" width="113 px">
 </div>
-<div class="text-center">
+<div class="text-center sub-heading">
 EARN
 </div>
 </div>
@@ -100,7 +109,7 @@ EARN
 <div class="thumbnail">
 <img src="/assets/images/enjoy.jpg" alt="Enjoy" width="160 px">
 </div>
-<div class="text-center">
+<div class="text-center sub-heading">
 ENJOY
 </div>
 </div>
@@ -115,7 +124,7 @@ ENJOY
 <div class="center_title">
 <h3>OUR FIRST PRODUCT</h3>
 <!-- <div class="title_icon_1"></div> -->
-<div class="head_content" style="text-align:left; float:left"><strong>Simple yet Profound Entrepreneur E magazine - Business Bugs</strong></div>
+<div class="head_content sub-heading" style="text-align:left; float:left"><strong>Simple yet Profound Entrepreneur E magazine - Business Bugs</strong></div>
 </div>
 <div class="body1">
 @foreach($magazine as $data)

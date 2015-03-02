@@ -7,20 +7,13 @@
           <h3>
             Support 
           </h3>
-              <ul>
-              <li>
-                <a class="inline" href="callto:+919418890376">
-                  <strong>
-                    &#9990; 9418890376
-                  </strong>
-                </a>
-              </li>
-              <li>
-                <a class="inline" href="mailto:contact@businessbugs.in">
-                   &#9993; contact@businessbugs.in
-                </a>
-              </li>
-            </ul>
+          <ul>
+            <li>
+              <a class="inline" href="mailto:contact@businessbugs.in">
+                 &#9993; contact@businessbugs.in
+              </a>
+            </li>
+          </ul>
         </div>
         
         
@@ -34,7 +27,7 @@
               <a href="/aboutus">
                 About us
               </a>
-              
+        
             </li>
             <li>
               <a href="http://businessbugs.blogspot.in/">

@@ -9,7 +9,7 @@
 		<h4>Feedback Mail from {{$feedback_email}}</h4>
 		<pre>
 			<h4> Subject:</h4>{{$feedback_subject}}
-			<h4>Description:</h4> {{$feedback_description}}
+			<h4>Description:</h4> {{$feedback_message}}
 		</pre>
 	</body>
 </html>
