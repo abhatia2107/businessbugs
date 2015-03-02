@@ -28,29 +28,46 @@
 			h1{
 			    top:80px;
 			    bottom:-260px;
-			    font-size: 72px;
-			    color: yellow;
+			    font-size: 60px;
+			    color: black;
 			    
+			}
+			
+			h2{
+				top:110px;
+				bottom:-280px;
+				left:250px;
+				font-size: 40px;
+				color:black;
+			}
+			h3{
+				top:110px;
+				bottom:-280px;
+				left:250px;
+				font-size: 30px;
+				color:black;
 			}
 			p{
 				top:110px;
 				bottom:-280px;
 				left:250px;
 				font-size: 30px;
-				color:yellow;
+				color:black;
 			}
 			.maincontent{
 				text-align: center;
 			}
 		</style>
-		<div class="main-container background">
+		<div class="main-container">
 			<div class="maincontent">
-				<h1>WHY SHOULD I WORK AT </h1>
-				<h1>businessbugs.in?</h1>
-				<p> WE BELIEVE IN CREATING ENTREPRENEURS, NOT EMPLOYEES.</p>
-				<p> IF YOU'RE CONVINCED WITH US AND WANT TO GROW ALONG WITH US</p>
-				<p> SEND YOUR PROFILE AT</p>
-				<p><a href="mailto:careers@businessbugs.in"> careers@businessbugs.in</a></p>
+				<h1>At Business Bugs our endeavor is to promote entrepreneurship to the new levels.  </h1>
+				<h2>We don't hire you basically but you partner with us. </h2>
+				<h2>YOU DO THE WORK &amp; YOU GET PAID. </h2>
+				<h3>We are hiring Creative writers, designers & video production guys. </h3>
+				<p>If you are interested , send us your resume with a cover letter to <a href="mailto:contact@businessbugs.in"> contact@businessbugs.in</a></p>
+				<p>We will get in touch with you within 24 hours guaranteed. </p>
+				<p>If you want to launch any product or service or you have any business idea that you want to share with us,</p>
+				<p>write at<a href="mailto:contact@businessbugs.in"> contact@businessbugs.in</a></p>
 				<!-- <button class="button1 btn">GIVE ME ANOTHER REASON </button> -->
 				<!-- <button class="button1 btn">I AM CONVINCED </button> -->
 			</div>
