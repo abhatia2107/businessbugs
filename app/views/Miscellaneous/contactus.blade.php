@@ -3,37 +3,53 @@
   <link href="/css/bootstrap/css/jquery-ui.css" rel="stylesheet">
 @stop
 @section('content')
-
+<style type="text/css">
+  .contact-heading{
+    font:15px/1.5 Open Sans, Arial, sans-serif;
+    font-weight: bold;
+  }
+</style>
 <div class="container main-container headerOffset">
 <div class="main container">
+    <div class="col-md-3">
+      
+    </div>
     <div class="col-md-5 col-sm-7 col-xs-12">
       <form  role="form" id="support" method="post" enctype="multipart/form-data" action="/feedbacks/store">
         <div class="form-group">
-          <h3 class="heading">Submit a request/feedback/complaint</h3>
+          <h3 class="contact-heading">Have a query? Or just want to tell us how awesome we are ?</h3>
+          <h3 class="contact-heading">Drop in a line here or email contact@businessbugs.in</h3>
         </div>
-      <div class="form-group">
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <div class="form-group text-center">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <label for="feedback_name">
+                    Your Name
+                    <span class="required">*</span>
+                </label>
+                <input type="text" class="form-control"  placeholder="Name" name="feedback_name" id="feedback_name">
+      </div>
+      <div class="form-group text-center">
           <label for="feedback_email">
-                    Email
+                    Your Email
                 <span class="required">*</span>
                 </label>
                 <input type="text" class="form-control"  placeholder="Email" name="feedback_email" id="feedback_email">
       </div>
-      <div class="form-group">
+      <div class="form-group text-center">
           <label for="feedback_subject">
                     Subject
                     <span class="required">*</span>
                 </label>
-                <input type="text" class="form-control"  placeholder="Subject of the issue" name="feedback_subject" id="feedback_subject">
+                <input type="text" class="form-control"  placeholder="Subject of the message" name="feedback_subject" id="feedback_subject">
       </div>
-      <div class="form-group">
-          <label for="feedback_description">
-                    Description
+      <div class="form-group text-center">
+          <label for="feedback_message">
+                    Your Message
                     <span class="required">*</span>
                 </label>
-                <textarea rows="5" class="form-control"  placeholder="Tell us more about the issue." name="feedback_description" id="feedback_description"></textarea>
+                <textarea rows="5" class="form-control" name="feedback_message" id="feedback_message"></textarea>
       </div>
-      <div class="form-group">
+      <div class="form-group text-center">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
       <div class="box-content">
@@ -62,6 +78,12 @@
                     validating: 'glyphicon glyphicon-refresh'
                 },
                 fields: {
+                    feedback_name: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Name is required and cannot be empty'
+                            }
+                    }},
                     feedback_email: {
                         validators: {
                             notEmpty: {
@@ -79,10 +101,10 @@
                             }
                     }},
 
-                    feedback_description: {
+                    feedback_message: {
                         validators: {
                             notEmpty: {
-                                message: 'The description is required and cannot be empty'
+                                message: 'The message is required and cannot be empty'
                             }
                     }},
 

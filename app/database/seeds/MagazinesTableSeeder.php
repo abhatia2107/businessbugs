@@ -5,13 +5,13 @@ class MagazinesTableSeeder extends Seeder {
 	public function run()
 	{
 		Magazine::create([
-			'magazine' => 'March',
-			'magazine_price' =>'300',
+			'magazine' => 'February Issue',
+			'magazine_price' =>'40',
 		]);
 
 		Magazine::create([
-			'magazine' => 'Subscription',
-			'magazine_price' =>'3000',
+			'magazine' => 'Annual Subscription',
+			'magazine_price' =>'480 38% OFF 300',
 		]);
 	}
 

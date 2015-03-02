@@ -15,10 +15,11 @@ class CreateFeedbacksTable extends Migration {
 		Schema::create('feedbacks', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('feedback_name');
 			$table->string('feedback_subject');
 			$table->string('feedback_email');
 			$table->integer('feedback_user_id')->foreign('feedback_user_id')->references('id')->on('users');;
-			$table->text('feedback_description');
+			$table->text('feedback_message');
 			$table->boolean('feedback_read')->default(0);
 			$table->softDeletes();
 			$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));

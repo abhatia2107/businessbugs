@@ -24,6 +24,14 @@
 	overflow: scroll;
 
 	}
+	.heading{
+		font-family:oswald; 
+		font-size: 3.438em;
+	}
+	.sub-heading{
+		font-family:oswald; 
+		font-size: 2.3em;
+	}
 </style>
 <div class="main-container">
 <div class="main wrapper clearfix">
@@ -74,7 +82,8 @@ Next
 </span>
 </a>
 </div>
-INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
+</h1>
+<h1 class="heading">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
 <p>
 <div class="col-lg-4">
 <div class="panel">
@@ -82,7 +91,7 @@ INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
 <div class="thumbnail">
 <img src="/assets/images/learn.jpg" alt="Learn" width="150 px">
 </div>
-<div class="text-center">
+<div class="text-center sub-heading">
 LEARN
 </div>
 </div>
@@ -94,7 +103,7 @@ LEARN
 <div class="thumbnail">
 <img src="/assets/images/earn.jpg" alt="Earn" width="113 px">
 </div>
-<div class="text-center">
+<div class="text-center sub-heading">
 EARN
 </div>
 </div>
@@ -106,7 +115,7 @@ EARN
 <div class="thumbnail">
 <img src="/assets/images/enjoy.jpg" alt="Enjoy" width="160 px">
 </div>
-<div class="text-center">
+<div class="text-center sub-heading">
 ENJOY
 </div>
 </div>
@@ -119,28 +128,27 @@ ENJOY
 </main>
 <section class="related">
 			<div class="center_title col-md-12 col-sm-12 col-xs-12">
-				<h3>OUR FIRST PRODUCT</h3>
-					<!-- <div class="title_icon_1"></div> -->
-				<div class="head_content" style="text-align:left; float:left">
+<h3>OUR FIRST PRODUCT</h3>
+<!-- <div class="title_icon_1"></div> -->
+				<div class="head_content sub-heading" style="text-align:left; float:left">
 				<h4>
 					<strong>
 						Simple yet Profound Entrepreneur E magazine - Business Bugs
 					</strong>
 				</h4>
 				</div>
-			</div>
 			<div class="body1 col-md-12 col-sm-12 col-xs-12">
-				@foreach($magazine as $data)
-				<a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
+{{--@foreach($magazine as $data)--}}
+<a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
 					<div class="container1">
 						<img src="/assets/images/cover.jpg" height="450" width="350">
 						<div class="text-center">
 							<h3>
-								{{$data->magazine}}
+								February Issue
 							</h3>
 						</div>
 						<h5>
-							Price: ₹ {{$data->magazine_price}}
+							Price: ₹ 40
 						</h5>
 						<div class="text-right">
 							<button type="button" class="btn btn-success">
@@ -150,9 +158,29 @@ ENJOY
 					</div>
 
 				</a>
-				@endforeach<br>
-			</div>
-		</section>
+<a href="{{url('/payments/create/2')}}" class="pj-blog pj-content-pune ">
+					<div class="container1">
+						<img src="/assets/images/cover.jpg" height="450" width="350">
+						<div class="text-center">
+							<h3>
+								Annual Subscription
+							</h3>
+						</div>
+						<h5>
+							Price: <strike> ₹ 480 </strike> 38% OFF ₹ 300
+						</h5>
+						<div class="text-right">
+							<button type="button" class="btn btn-success">
+								Buy
+							</button>
+						</div>
+					</div>
+
+				</a>
+				{{--@endforeach--}}
+</div>
+</section>
+</div>
 </div>
 	</div>
 @endsection

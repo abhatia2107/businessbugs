@@ -1,5 +1,5 @@
 @section('footer')
-  <div class="footer">
+  <div class="footer broke-endless-pages">
     <div class="main-container">
       <div class="row">
       
@@ -7,20 +7,13 @@
           <h3>
             Support 
           </h3>
-              <ul>
-              <li>
-                <a class="inline" href="callto:+919418890376">
-                  <strong>
-                    &#9990; 9418890376
-                  </strong>
-                </a>
-              </li>
-              <li>
-                <a class="inline" href="mailto:contact@businessbugs.in">
-                   &#9993; contact@businessbugs.in
-                </a>
-              </li>
-            </ul>
+          <ul>
+            <li>
+              <a class="inline" href="mailto:contact@businessbugs.in">
+                 &#9993; contact@businessbugs.in
+              </a>
+            </li>
+          </ul>
         </div>
         
         
@@ -34,7 +27,7 @@
               <a href="/aboutus">
                 About us
               </a>
-              
+        
             </li>
             <li>
               <a href="http://businessbugs.blogspot.in/">
@@ -100,6 +93,9 @@
             </ul>
        </div>
       </div><!--/.row-->
+        <p class="text-muted text-center">
+          Designed & Developed by: <a href="https://linkedin.com/in/abhatia2107">Abhishek Bhatia</a>, <a href="http://in.linkedin.com/pub/shefali-agarwal/7a/548/661">Shefali Agarwal</a>, <a href="http://in.linkedin.com/pub/prerna-jain/a9/8b5/4a0">Prerna Jain</a>, Kuldeep Meena
+        </p>
     </div><!--/.container-->
   </div><!--/.footer-->
 @show

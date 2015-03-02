@@ -442,13 +442,13 @@ class UsersController extends \BaseController {
 	    			User::create($profileData);
 	    		}
 	    		try {
-				    $response = (new FacebookRequest(
+				    /*$response = (new FacebookRequest(
 				      $session, 'POST', '/me/feed', array(
 				        'link' => 'www.'.Lang::get('ViewsLang/home.home_name').'.com',
 				        'message' => 'User provided message'
 				      )
 				    ))->execute()->getGraphObject();
-
+*/
 				    // $msg= "Posted with id: " . $response->getProperty('id');
 
 				} catch(FacebookRequestException $e) {
