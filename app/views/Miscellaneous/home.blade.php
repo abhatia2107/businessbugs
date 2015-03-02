@@ -2,7 +2,8 @@
 @section('content')
 <style type="text/css">
 	.body1{
-	padding-left: 125px;
+	/*padding-left: 125px;*/
+	text-align: center;
 	padding-top: 20px;
 
 	}

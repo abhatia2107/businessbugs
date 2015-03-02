@@ -78,12 +78,7 @@
                 </i>
               </a>
             </li>
-            <!-- <li>
-              <a href="https://plus.google.com">
-                <i class="fa fa-google-plus">
-                </i>
-              </a>
-            </li> -->
+            
             <li>
               <a href="https://www.youtube.com/channel/UCWNvWJLEZ6eHBOZTRiZ1aoQ">
                 <i class="fa fa-youtube">              

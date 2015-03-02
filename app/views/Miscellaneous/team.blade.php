@@ -1,6 +1,6 @@
 @extends('Layouts.layout')
 @section('content')
-	<div class="main-container">
+	<div class="main-container wrapper">
 	<hr>
 		<div class="lead text-center">
 		The team at the Business Bugs is the team of determined individuals who thrive to excel in their respective fields in life with passion, hard work & out of box thinking.

@@ -1,12 +1,12 @@
-html{
-	overflow-x:hidden;
-}
 body{
-	overflow-x:hidden;
+	/*overflow-x:hidden;*/
 	font-family: oswald;
 }
 .main-container{
 	padding-bottom:5px;
+}
+.pull-left{
+	width:33%;
 }
 .logo img{
  height:100%;
@@ -134,18 +134,11 @@ font-weight: 300px;
 margin-bottom: 20px;
 }
 .footer{
-	background: #CECECE;
+	/*background: #CECECE;*/
 	padding:2%;
 	padding-bottom: 0px;
 }
-.jumbotron{
-	padding:10px;
-	text-align: left;
-	font-weight:bold;
-	margin:10px;
-	min-height:400px; 
-}
 .lead{
 	padding:10px;
-	min-height:400px;
+
 }
