@@ -5,6 +5,12 @@ body{
 .main-container{
 	padding-bottom:5px;
 }
+.carousel{
+	position:relative;
+	width:-moz-min-content;
+	margin:auto;
+	background-color: white;
+}
 .pull-left{
 	width:33%;
 }
@@ -30,6 +36,11 @@ body{
 }
 .nav-tabs{
 	border-bottom:none;
+}
+.navbar-nav li a:active{
+	text-transform: none;
+	text-decoration: none;
+	border:none;
 }
 @media(max-width:600px){
 .nav-tabs li{
@@ -67,13 +78,13 @@ font-color:#5b3839;
 }
 .carousel .item img{
 	height: 500px;
-	width:100%;
+	width:450px;
 	
 }
 .img-text{
 	background:transparent;
 	text-align: center;
-	margin-top:-162px;
+	/*margin-top:-162px;*/
 	font-size: 35px;
 	font-weight: normal;
 }
