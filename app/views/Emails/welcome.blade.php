@@ -14,6 +14,9 @@
 					Dear {{ $name}},
 				</h1>
 				<p style="font-size:120%; color:#000;">
+					Welcome to Business Bugs - India's First Entrepreneurship E - Commerce Platform. Business Bugs is the platform for the entrepreneurs  & by the entrepreneurs. You can buy Business Bugs Magazine ₹ 40 per month &  annual subscription for just ₹ 300 (38% off).
+				</p>
+				<p style="font-size:120%; color:#000;">
 					We're ready to activate your account. All we need to do is make sure this is your email address.
 				</p>
 				<div style="text-align:center;">
