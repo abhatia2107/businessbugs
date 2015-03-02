@@ -50,7 +50,7 @@ class PaymentsController extends \BaseController {
 	    $SALT = "GQs7yium";
 		$user=exec('whoami');
 		$credentials=Input::all();
-		$pathToFile='/home/'.$user.'/Projects/businessbugs/public/assets/magazines/March.pdf';
+		$pathToFile='/home/'.$user.'/Projects/businessbugs/public/assets/magazines/February.pdf';
 		// dd($credentials);
 		$hashSequence = "udf1|email|firstname|productinfo|amount|txnid|key";
 		$hashVarsSeq = explode('|', $hashSequence);
