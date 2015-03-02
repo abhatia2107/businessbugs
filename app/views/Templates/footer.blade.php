@@ -1,5 +1,5 @@
 @section('footer')
-  <div class="footer">
+  <div class="footer broke-endless-pages">
     <div class="main-container">
       <div class="row">
       
@@ -93,6 +93,9 @@
             </ul>
        </div>
       </div><!--/.row-->
+        <p class="text-muted text-center">
+          Designed & Developed by: <a href="https://linkedin.com/in/abhatia2107">Abhishek Bhatia</a>, <a href="http://in.linkedin.com/pub/shefali-agarwal/7a/548/661">Shefali Agarwal</a>, <a href="http://in.linkedin.com/pub/prerna-jain/a9/8b5/4a0">Prerna Jain</a>, Kuldeep Meena
+        </p>
     </div><!--/.container-->
   </div><!--/.footer-->
 @show
