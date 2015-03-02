@@ -112,12 +112,12 @@ ENJOY
 </p>
 </main>
 <section class="related">
-<div class="center_title">
+<div class="center_title col-md-12 col-sm-12 col-xs-12">
 <h3>OUR FIRST PRODUCT</h3>
 <!-- <div class="title_icon_1"></div> -->
-<div class="head_content" style="text-align:left; float:left"><strong>Simple yet Profound Entrepreneur E magazine - Business Bugs</strong></div>
+<div class="head_content" style="text-align:left; float:left"><h4><strong>Simple yet Profound Entrepreneur E magazine - Business Bugs</strong></h4>
 </div>
-<div class="body1">
+<div class="body1 col-md-12 col-sm-12 col-xs-12">
 @foreach($magazine as $data)
 <a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
 <div class="container1">

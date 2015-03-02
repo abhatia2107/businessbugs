@@ -1,3 +1,9 @@
+html{
+	overflow-x:hidden;
+}
+body{
+	overflow-x:hidden;
+}
 .main-container{
 	padding-bottom:5px;
 }
@@ -5,8 +11,18 @@
  height:100%;
  width:100%;
 }
+@media(max-width:600px){
+	.header_right{
+		text-align:center;
+	}
+}
 .navbar-nav{
 	float:right;
+}
+@media(max-width:600px){
+	.navbar-nav{
+	float:none;
+}
 }
 .navbar-header{
 	float:none;
@@ -14,12 +30,20 @@
 .nav-tabs{
 	border-bottom:none;
 }
+@media(max-width:600px){
+.nav-tabs li{
+	float:none;
+}
+}
 .nav-tabs li a:hover{
 	background: none;
-	border: none;;
+	border: none;
 }
-.sheep{
-	float:right;
+.banner{
+	text-align: center;
+}
+.banner img{
+	width: 100%;
 }
 .navbar-toggle{
 	background:black;
@@ -59,11 +83,15 @@ font-color:#5b3839;
 	text-align: justify;
 	font-size: 22px;
 }
-.center_title{
+.center_title{ 
 	background: none;
-	/*border-bottom: 1px solid gray;*/
-	height:40px;
 	padding-left: 10px;
+}
+.section-title-style2{
+	border-bottom: 1px solid gray;
+}
+.center_title h3{
+	border-bottom: 1px solid gray;
 }
 .head_content{
 	padding-top:0px;
@@ -115,4 +143,8 @@ margin-bottom: 20px;
 	font-weight:bold;
 	margin:10px;
 	min-height:400px; 
+}
+.lead{
+	padding:10px;
+	min-height:400px;
 }
