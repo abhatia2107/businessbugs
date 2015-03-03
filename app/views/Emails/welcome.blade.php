@@ -30,6 +30,9 @@
 					Having Troubles? Copy this url to your browser:<a href="{{ URL::to('/users/registration/verify/'.$userId.'/'.$confirmationcode) }}">{{ URL::to('/users/registration/verify/'.$userId.'/'.$confirmationcode) }}</a>
 				</p>
 				<p style="font-size:85%; color:#444;">
+					If you're getting this mail in your SPAM, kindly add us to your contacts to avoid any communication from our site.
+				</p>
+				<p style="font-size:85%; color:#444;">
 					For any queries, reach out to us at: <a href="mailto:contact@businessbugs.in">contact@businessbugs.in</a>
 				</p>
 				<p style="font-size:85%; text-align:center; color:#444;">

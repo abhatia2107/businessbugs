@@ -14,7 +14,7 @@
 					Dear {{ $name}},
 				</h1>
 				<p style="font-size:120%; color:#000;">
-					Thanks for purchasing our {{$magazine}}. Please find attached your copy of business bugs.
+					Thanks for purchasing our {{$magazine}}. Please find attached your copy of business bugs. You must have recieved a mail from PayUMoney also which contains your invoice. Kindly open the mail and click on Release Payment button.
 				</p>
 				<p style="font-size:120%; color:#000;">
 					Welcome to Business Bugs - India's First Entrepreneurship E - Commerce Platform. Business Bugs is the platform for the entrepreneurs  & by the entrepreneurs. 
