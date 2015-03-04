@@ -65,27 +65,7 @@
                 </form>
             </li>
           </ul>
-          <ul class="social">
-            <li>
-              <a href="https://www.facebook.com/businessbugs">
-                <i class="fa fa-facebook">
-                </i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/Business_Bugs">
-                <i class="fa fa-twitter">
-                </i>
-              </a>
-            </li>
-            
-            <li>
-              <a href="https://www.youtube.com/channel/UCWNvWJLEZ6eHBOZTRiZ1aoQ">
-                <i class="fa fa-youtube">              
-                </i>
-              </a>
-            </li>
-            </ul>
+          
        </div>
       </div><!--/.row-->
         <p class="text-muted text-center">
