@@ -7,7 +7,6 @@ class AdminsTableSeeder extends Seeder {
 		$faker = Faker\Factory::create();
 		DB::table('admins')->insert(array('admin_user_id'=>1));
 		DB::table('admins')->insert(array('admin_user_id'=>2));
-		DB::table('admins')->insert(array('admin_user_id'=>3));
   	}
 
 }

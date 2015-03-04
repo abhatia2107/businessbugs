@@ -4,7 +4,6 @@ class BaseController extends Controller {
 
 	protected $admin;
 	protected $customer;
-	protected $featured;
 	protected $feedback;
 	protected $magazine;
 	protected $subscription;
@@ -12,7 +11,6 @@ class BaseController extends Controller {
 
 	protected $adminPanelList=array(
 									'customers' => 'Customers', 
-									'features' => 'Features', 
 									'feedbacks' => 'Feedbacks', 
 									'magazines' => 'Magazines', 
 									'subscriptions' => 'Subscriptions',
@@ -27,7 +25,6 @@ class BaseController extends Controller {
 	{
 		$this->admin = new Admin;
 		$this->customer = new Customer;
-		$this->feature = new Feature;
 		$this->feedback = new Feedback;
 		$this->magazine = new Magazine;
 		$this->subscription = new Subscription;

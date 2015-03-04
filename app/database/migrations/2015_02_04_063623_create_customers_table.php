@@ -15,7 +15,8 @@ class CreateCustomersTable extends Migration {
 		Schema::create('customers', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('customer_user_id')->unique()->foreign('customer_user_id')->references('id')->on('users');
+			$table->integer('customer_user_id')->foreign('customer_user_id')->references('id')->on('users');
+			$table->integer('customer_magazine_id')->foreign('customer_magazine_id')->references('id')->on('magazines');
 	        $table->softDeletes();
 			$table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
 			$table->timestamp('updated_at');

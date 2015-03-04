@@ -64,6 +64,7 @@ class PaymentsController extends \BaseController {
 	    $magazine=Magazine::find($credentials['udf1']);
 	    $magazine->magazine_purchase++;
 	    $magazine->save();
+	    $user_id=Auth::id();
 	    $hash = strtolower(hash('sha512', $hash_string));
 	    // dd($hash_string);
 		if($hash==$credentials['hash']){
@@ -80,6 +81,9 @@ class PaymentsController extends \BaseController {
 				$message->to($email,$name)->subject($subject);
 			    $message->attach($pathToFile);
 			});
+			$user = array('customer_user_id' => $user_id,
+					'customer_magazine_id' => $credentials['udf1'], );
+			Customer::create($user);
 			return View::make('Payments.success')->with($credentials);
 		}
 		else
@@ -108,4 +112,23 @@ class PaymentsController extends \BaseController {
 			return 'CheckSum Error. Invalid Transaction. Please try again';
 	}
 
+	public function successTest()
+	{
+		$credentials=array('status' => 'success', 
+			'txnid' => '4677747de5af21af9745',
+			'udf1'=> '1',
+			'amount'=>'40',
+			'productinfo'=>'Annual Subscription');
+		return View::make('Payments.success')->with($credentials);
+	}
+
+	public function failureTest()
+	{
+		$credentials=array('status' => 'success', 
+			'udf1'=> '1',
+			'txnid' => '4677747de5af21af9745',
+			'productinfo'=>'Annual Subscription');
+		return View::make('Payments.failure')->with($credentials);
+	}
 }
+
