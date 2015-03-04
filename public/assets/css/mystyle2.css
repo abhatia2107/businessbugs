@@ -1,9 +1,13 @@
-html body{
+html{
 	overflow-x:hidden;
 	font-family: oswald;
 }
-@media(max-width:400px){
-	body{
+body{
+	overflow-x:hidden;
+	font-family: oswald;
+}
+@media(max-width:600px){
+	html{
 		text-align: center;
 	}
 }
@@ -14,7 +18,16 @@ html body{
 	position:relative;
 	width:-moz-min-content;
 	margin:auto;
-
+}
+@media(max-width: 600px){
+.carousel{
+	position:relative;
+	width:auto;
+	margin:auto;
+}
+}
+.carousel-inner{
+	overflow:-moz-hidden-unscrollable;!important
 }
 .logo img{
  height:100%;
@@ -23,7 +36,7 @@ html body{
 .nav-text{
 	font-size: 1.1em;
 }
-.main-container{
+/*.main-container{*/
 	margin-right: -100px !important;
 
 }
@@ -77,7 +90,7 @@ width: 80%;
 margin: 0 10%;
 }
 .main h1 {
-font-size: 3.438em;
+/*font-size: 3.438em;*/
 line-height: 1.45;
 margin-bottom: 0.491em;
 margin-top: 30px;
@@ -94,14 +107,22 @@ font-color:#5b3839;
 
 }
 .img-text{
-	background:transparent;
+	background:green;
 	text-align: center;
 	/*margin-top:-162px;*/
-	font-size: 35px;
+	/*font-size: 35px;*/
 	font-weight: normal;
 }
+
 .img-text p{
-	color: red;
+	font-size:1.438em;
+	color: black;
+}
+@media(max-width:600px){
+.img-text p{
+	font-size:0.8em;
+	color: black;
+}
 }
 .mid-text{
 	text-align: justify;
@@ -160,6 +181,9 @@ margin-bottom: 20px;
 	/*background: #CECECE;*/
 	padding:2%;
 	padding-bottom: 0px;
+}
+.footer-wrapper{
+	text-align:center;
 }
 .lead{
 	padding:10px;

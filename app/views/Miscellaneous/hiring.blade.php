@@ -28,7 +28,7 @@
 			h1{
 			    top:80px;
 			    bottom:-260px;
-			    font-size: 60px;
+			    /*font-size: 60px;*/
 			    color: black;
 			    
 			}
@@ -37,29 +37,29 @@
 				top:110px;
 				bottom:-280px;
 				left:250px;
-				font-size: 40px;
+				/*font-size: 40px;*/
 				color:black;
 			}
 			h3{
 				top:110px;
 				bottom:-280px;
 				left:250px;
-				font-size: 30px;
+				/*font-size: 30px;*/
 				color:black;
 			}
 			p{
 				top:110px;
 				bottom:-280px;
 				left:250px;
-				font-size: 30px;
+				/*font-size: 30px;*/
 				color:black;
 			}
 			.maincontent{
 				text-align: center;
 			}
 		</style>
-		<div class="main-container ">
-			<div class="maincontent">
+		<div class="main-container">
+			<div class="maincontent lead text-center">
 				<h1>At Business Bugs our endeavor is to promote entrepreneurship to the new levels.  </h1>
 				<h2>We don't hire you basically but you partner with us. </h2>
 				<h2>YOU DO THE WORK &amp; YOU GET PAID. </h2>

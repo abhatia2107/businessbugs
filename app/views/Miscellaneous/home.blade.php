@@ -26,7 +26,7 @@
 	}
 	.heading{
 		font-family:oswald; 
-		font-size: 3.438em;
+		font-size: 1.438em;
 	}
 	.sub-heading{
 		font-family:oswald; 
@@ -39,7 +39,9 @@
 <h1 style="padding-top:10px;">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
+
 <div class="item active">
+
 <img alt="First slide" src="/assets/images/Home Slider/bawa.jpg">
 <section class="img-text">
 <p>
@@ -141,7 +143,7 @@ ENJOY
 {{--@foreach($magazine as $data)--}}
 <a href="{{url('/payments/create/1')}}" class="pj-blog pj-content-pune ">
 					<div class="container1">
-						<img src="/assets/images/cover.jpg" height="450" width="350">
+						<img src="/assets/images/cover.jpg" height="100%" width="100%">
 						<div class="text-center">
 							<h3>
 								February Issue
@@ -160,7 +162,7 @@ ENJOY
 				</a>
 <a href="{{url('/payments/create/2')}}" class="pj-blog pj-content-pune ">
 					<div class="container1">
-						<img src="/assets/images/cover.jpg" height="450" width="350">
+						<img src="/assets/images/cover.jpg" height="100%" width="100%">
 						<div class="text-center">
 							<h3>
 								Annual Subscription
@@ -182,7 +184,7 @@ ENJOY
 </div>
 </section>
 </div>
-	</div>
+</div>
 @endsection
 
    

@@ -3,7 +3,7 @@
     <div class="main-container">
       <div class="row">
       
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <h3>
             Support 
           </h3>
@@ -17,7 +17,7 @@
         </div>
         
         
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <h3>
             Information
           </h3>
