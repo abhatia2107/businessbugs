@@ -33,9 +33,6 @@ body{
  height:100%;
  width:100%;
 }
-.nav-text{
-	font-size: 1.1em;
-}
 }
 @media(max-width:600px){
 	.header_right{

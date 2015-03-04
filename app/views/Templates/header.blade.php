@@ -1,4 +1,15 @@
 @section('header')
+	<style type="text/css">
+		.nav-text {
+			color: #222;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.2em;
+			font-weight: 700;	
+			padding: 5px 10px;
+			display: block;
+		}
+	</style>
 
 	<div class="navbar-header"> 
 		<div class="main-container">
@@ -39,7 +50,7 @@
 					}
 				?>
 				@if(!$id)
-					<ul class="nav navbar-nav nav-tabs">
+					<ul class="nav navbar-nav nav-text nav-tabs">
 					    <li>
 					    	<a href="#" data-toggle="modal" data-target="#loginModal"><span>LogIn</span></a>
 					    </li>
@@ -52,7 +63,7 @@
 		        @else
 		        	
 	         			
-	          		<ul class="nav navbar-nav nav-tabs">
+	          		<ul class="nav navbar-nav nav-text nav-tabs">
 					    <li>
 							<a href="/users/show/{{$id}}">
 								@if($user)
