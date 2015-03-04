@@ -30,7 +30,7 @@ class UsersTableSeeder extends Seeder {
               'user_confirmed' =>true,
               'user_subscription_token' =>true,
               ));
-              
+              /*
               foreach(range(1,30) as $index)
               {
                      DB::table('users')->insert(array(
@@ -50,7 +50,7 @@ class UsersTableSeeder extends Seeder {
                      'user_subscription_token' =>$faker->boolean,
                      'user_photo'=>"0"
                      ));
-              }
+              }*/
        }
 }
 ?>

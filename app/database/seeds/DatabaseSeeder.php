@@ -13,11 +13,12 @@ class DatabaseSeeder extends Seeder {
 		$this->call('AdminsTableSeeder');
         $this->command->info('Admins table seeded!');
 
-		$this->call('FeaturesTableSeeder');
-		$this->command->info('Features table seeded!');
-
 		$this->call('MagazinesTableSeeder');
 		$this->command->info('Magazines table seeded!');
+
+		$this->call('UsersTableSeeder');
+        $this->command->info('Admins table seeded!');
+
 	}
 
 }
