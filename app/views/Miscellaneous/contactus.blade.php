@@ -8,6 +8,15 @@
     font:15px/1.5 Open Sans, Arial, sans-serif;
     font-weight: bold;
   }
+  form{
+    color:black;
+  }
+  .form-group label {
+    color:black;
+  }
+sup{
+  color:red;
+}
 </style>
 <div class="container main-container headerOffset">
 <div class="main container">
@@ -24,28 +33,28 @@
           <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
           <label for="feedback_name">
                     Your Name
-                    <span class="required">*</span>
+                    <span class="required"><sup>*</sup></span>
                 </label>
                 <input type="text" class="form-control"  placeholder="Name" name="feedback_name" id="feedback_name">
       </div>
       <div class="form-group text-center">
           <label for="feedback_email">
                     Your Email
-                <span class="required">*</span>
+                <span class="required"><sup>*</sup></span>
                 </label>
                 <input type="text" class="form-control"  placeholder="Email" name="feedback_email" id="feedback_email">
       </div>
       <div class="form-group text-center">
           <label for="feedback_subject">
                     Subject
-                    <span class="required">*</span>
+                    <span class="required"><sup>*</sup></span>
                 </label>
                 <input type="text" class="form-control"  placeholder="Subject of the message" name="feedback_subject" id="feedback_subject">
       </div>
       <div class="form-group text-center">
           <label for="feedback_message">
                     Your Message
-                    <span class="required">*</span>
+                    <span class="required"><sup>*</sup></span>
                 </label>
                 <textarea rows="5" class="form-control" name="feedback_message" id="feedback_message"></textarea>
       </div>

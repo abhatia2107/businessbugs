@@ -4,8 +4,17 @@
 			color: #222;
 			text-decoration: none;
 			text-transform: uppercase;
-			font-size: 1.2em;
-			font-weight: 700;	
+			/*font-size: 0.9em;*/
+			font-weight: 700;	*/
+			padding: 5px 10px;
+			display: block;
+		}
+		.nav-text a{
+			color: #222;
+			text-decoration: none;
+			text-transform: uppercase;
+			/*font-size: 0.9em;*/
+			font-weight: 700;	*/
 			padding: 5px 10px;
 			display: block;
 		}

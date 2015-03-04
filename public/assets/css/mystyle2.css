@@ -1,10 +1,11 @@
 html{
 	overflow-x:hidden;
-	font-family: oswald;
+	font-family: "Lato",Arial,sans-serif;
 }
 body{
 	overflow-x:hidden;
-	font-family: oswald;
+	font-family: "Lato",Arial,sans-serif;
+	color:brown;
 }
 @media(max-width:600px){
 	html{
@@ -106,11 +107,12 @@ font-color:#5b3839;
 
 }
 .img-text{
-	background:green;
+	background:gray;
 	text-align: center;
 	/*margin-top:-162px;*/
-	/*font-size: 35px;*/
-	font-weight: normal;
+	font-size: 30px;
+	font-weight:normal ;
+	font-style: italic;
 }
 
 .img-text p{
@@ -119,7 +121,7 @@ font-color:#5b3839;
 }
 @media(max-width:600px){
 .img-text p{
-	font-size:0.8em;
+	font-size:0.5em;
 	color: black;
 }
 }
@@ -208,4 +210,9 @@ margin-bottom: 20px;
 }
 a:hover{
 	text-decoration: none;
+	text-transform: none;
+	color: inherit;
+}
+a{
+	color:black;
 }

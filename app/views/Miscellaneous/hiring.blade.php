@@ -62,12 +62,12 @@
 			<div class="maincontent lead text-center">
 				<h1>At Business Bugs our endeavor is to promote entrepreneurship to the new levels.  </h1>
 				<h2>We don't hire you basically but you partner with us. </h2>
-				<h2>YOU DO THE WORK &amp; YOU GET PAID. </h2>
+				<h2 style="color:red">YOU DO THE WORK &amp; YOU GET PAID. </h2>
 				<h3>We are hiring Creative writers, designers & video production guys. </h3>
-				<p>If you are interested , send us your resume with a cover letter to <a href="mailto:contact@businessbugs.in"> contact@businessbugs.in</a></p>
-				<p>We will get in touch with you within 24 hours guaranteed. </p>
-				<p>If you want to launch any product or service or you have any business idea that you want to share with us,</p>
-				<p>write at<a href="mailto:contact@businessbugs.in"> contact@businessbugs.in</a></p>
+				<h4>If you are interested , send us your resume with a cover letter to <a href="mailto:contact@businessbugs.in"> contact@businessbugs.in</a></h4>
+				<h4>We will get in touch with you within 24 hours guaranteed. </h4>
+				<h4>If you want to launch any product or service or you have any business idea that you want to share with us,</h4>
+				<h4>write at<a href="mailto:contact@businessbugs.in"> contact@businessbugs.in</a></h4>
 				<!-- <button class="button1 btn">GIVE ME ANOTHER REASON </button> -->
 				<!-- <button class="button1 btn">I AM CONVINCED </button> -->
 			</div>

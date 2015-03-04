@@ -25,12 +25,22 @@
 
 	}
 	.heading{
-		font-family:oswald; 
-		font-size: 1.438em;
+		/*font-family:oswald;*/
+		font-size: 2.438em;
 	}
+@media(max-width:600px){
+	.heading{
+		font-size:1.438em;
+	}
+}
 	.sub-heading{
 		font-family:oswald; 
 		font-size: 2.3em;
+	}
+	@media(max-width:600px){
+		.social{
+			margin-top:-270px;
+		}
 	}
 </style>
 <div class="main-container col-md-12 col-sm-12 col-xs-12">
@@ -134,7 +144,7 @@ Next
             </ul>
 </div>
 </h1>
-<h1 class="heading">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
+<h1 class="heading" style="color:red">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
 <p>
 <div class="col-lg-4">
 <div class="panel">
@@ -142,7 +152,7 @@ Next
 <div class="thumbnail">
 <img src="/assets/images/learn.jpg" alt="Learn" width="150 px">
 </div>
-<div class="text-center sub-heading">
+<div class="text-center sub-heading"  style="color:green">
 LEARN
 </div>
 </div>
@@ -154,7 +164,7 @@ LEARN
 <div class="thumbnail">
 <img src="/assets/images/earn.jpg" alt="Earn" width="113 px">
 </div>
-<div class="text-center sub-heading">
+<div class="text-center sub-heading"  style="color:black">
 EARN
 </div>
 </div>
@@ -166,7 +176,7 @@ EARN
 <div class="thumbnail">
 <img src="/assets/images/enjoy.jpg" alt="Enjoy" width="160 px">
 </div>
-<div class="text-center sub-heading">
+<div class="text-center sub-heading" style="color:red">
 ENJOY
 </div>
 </div>
@@ -179,10 +189,10 @@ ENJOY
 </main>
 <section class="related">
 			<div class="center_title col-md-12 col-sm-12 col-xs-12">
-<h3>OUR FIRST PRODUCT</h3>
+<h3 style="color:black">OUR FIRST PRODUCT</h3>
 <!-- <div class="title_icon_1"></div> -->
 				<div class="head_content sub-heading" style="text-align:left; float:left">
-				<h4>
+				<h4 style="color:green">
 					<strong>
 						Simple yet Profound Entrepreneur E magazine - Business Bugs
 					</strong>
@@ -198,7 +208,7 @@ ENJOY
 								February Issue
 							</h3>
 						</div>
-						<h5>
+						<h5 style="color:black">
 							Price: ₹ 40
 						</h5>
 						<div class="text-right">
@@ -218,7 +228,7 @@ ENJOY
 							</h3>
 						</div>
 						<h5>
-							Price: <strike> ₹ 480 </strike> 38% OFF ₹ 300
+							Price: <strike style="color:red"> ₹ 480 </strike> 38% OFF ₹ 300
 						</h5>
 						<div class="text-right">
 							<button type="button" class="btn btn-success">

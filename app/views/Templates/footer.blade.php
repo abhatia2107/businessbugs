@@ -1,4 +1,21 @@
 @section('footer')
+<style type="text/css">
+.footer a{
+      color: #222;
+      text-decoration: none;
+      /*text-transform: uppercase;*/
+      /*font-size: 0.9em;*/
+      font-weight: 700; */
+      padding: 5px 10px;
+      /*display: block;*/
+    }
+    .footer h3{
+      color:black;
+    }
+    form{
+      color:black;
+    }
+    </style>
   <div class="footer broke-endless-pages">
     <div class="main-container">
       <div class="row">
