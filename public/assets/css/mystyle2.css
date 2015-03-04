@@ -1,5 +1,5 @@
-body{
-	/*overflow-x:hidden;*/
+html body{
+	overflow-x:hidden;
 	font-family: oswald;
 }
 @media(max-width:400px){
@@ -19,6 +19,13 @@ body{
 .logo img{
  height:100%;
  width:100%;
+}
+.nav-text{
+	font-size: 1.1em;
+}
+.main-container{
+	margin-right: -100px !important;
+
 }
 @media(max-width:600px){
 	.header_right{
@@ -81,7 +88,10 @@ font-color:#5b3839;
 .carousel .item img{
 	height: 500px;
 	width:450px;
-	
+}
+.item{
+	padding-left: -125px !important;
+
 }
 .img-text{
 	background:transparent;

@@ -1,7 +1,7 @@
 @section('header')
 
 	<div class="navbar-header"> 
-		<div clas="main-container">
+		<div class="main-container">
 			<div class="logo pull-left col-md-5 col-sm-5 col-xs-12">
 				<a href="/">
 					<img src="/assets/images/businessbugs_logo.jpg" alt="Business Bugs">
@@ -10,22 +10,22 @@
 			<div class="header_right col-md-7 col-sm-7 col-xs-12">
 					<ul class="nav navbar-nav nav-tabs">
 						<li>
-							<a href="/aboutus">ABOUT US</a>
+							<a class="nav-text" href="/aboutus">ABOUT US</a>
 						</li>
 						<li>
-							<a href="/team">TEAM</a>
+							<a class="nav-text" href="/team">TEAM</a>
 						</li>
 						<li>
-							<a href="/services">PRODUCTS &#38; SERVICES</a>
+							<a class="nav-text" href="/services">PRODUCTS &#38; SERVICES</a>
 						</li>
 						<li>
-							<a href="/we-are-hiring">WE ARE HIRING</a>
+							<a class="nav-text" href="/we-are-hiring">WE ARE HIRING</a>
 						</li>
 						<li>
-							<a href="/contactus">CONTACT</a>
+							<a class="nav-text" href="/contactus">CONTACT</a>
 						</li>
 						<li>
-							<a href="/food-mad">FOOD MAD</a>
+							<a class="nav-text" href="/food-mad">FOOD MAD</a>
 						</li>
 					</ul>
 				<div class="col-md-12 col-sm-12 col-xs-12">
@@ -68,8 +68,7 @@
 							<a href="/users/logout">Logout</a>
 					    </li>
 					</ul>
-					    
-		         
+				 
 		       	@endif
 		       	</div>
 			</div>

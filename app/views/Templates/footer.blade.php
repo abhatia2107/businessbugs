@@ -49,7 +49,7 @@
             
           </ul>
         </div>  
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
           <h3>
             Stay in touch
           </h3>

@@ -26,7 +26,7 @@
 		"logout"=>"You have been logged out successfully!",
 
 		//sign up
-		"user_signup_success"=>"You have been successfully registered, Please verify your email address.",
+		"user_signup_success"=>"You have been successfully registered, Please verify your email address. Kindly look SPAM box also, If you don't recieve mail in your inbox.",
 
 		"user_signup_failed"=>"Sorry, We are unable to add the user",
 
