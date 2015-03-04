@@ -37,6 +37,31 @@
 <div class="main wrapper clearfix">
 <main class="clearfix">
 <h1 style="padding-top:10px;">
+<div class="col-md-2 col-sm-2"></div>
+<div class="icons col-md-1 col-sm-1 col-xs-3">
+<ul class="social">
+            <li>
+              <a href="https://www.facebook.com/businessbugs">
+                <i class="fa fa-facebook">
+                </i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Business_Bugs">
+                <i class="fa fa-twitter">
+                </i>
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://www.youtube.com/channel/UCWNvWJLEZ6eHBOZTRiZ1aoQ">
+                <i class="fa fa-youtube">              
+                </i>
+              </a>
+            </li>
+            </ul>
+</div>
+<div class="col-md-8 col-sm-8 col-xs-9">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
 
@@ -84,6 +109,8 @@ Next
 </span>
 </a>
 </div>
+</div>
+<div class="col-md-1 col-sm-1"></div>
 </h1>
 <h1 class="heading">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
 <p>
