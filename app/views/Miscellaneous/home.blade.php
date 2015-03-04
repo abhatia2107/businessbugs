@@ -21,7 +21,7 @@
 	
 	.clear {
 	clear: both;
-	overflow: scroll;
+	overflow:scroll;
 
 	}
 	.heading{
@@ -33,7 +33,7 @@
 		font-size: 2.3em;
 	}
 </style>
-<div class="main-container">
+<div class="main-container col-md-12 col-sm-12 col-xs-12">
 <div class="main wrapper clearfix">
 <main class="clearfix">
 <h1 style="padding-top:10px;">

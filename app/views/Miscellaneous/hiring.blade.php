@@ -58,7 +58,7 @@
 				text-align: center;
 			}
 		</style>
-		<div class="main-container">
+		<div class="main-container ">
 			<div class="maincontent">
 				<h1>At Business Bugs our endeavor is to promote entrepreneurship to the new levels.  </h1>
 				<h2>We don't hire you basically but you partner with us. </h2>

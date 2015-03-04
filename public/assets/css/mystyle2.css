@@ -2,6 +2,11 @@ body{
 	/*overflow-x:hidden;*/
 	font-family: oswald;
 }
+@media(max-width:400px){
+	body{
+		text-align: center;
+	}
+}
 .main-container{
 	padding-bottom:5px;
 }
@@ -9,10 +14,7 @@ body{
 	position:relative;
 	width:-moz-min-content;
 	margin:auto;
-	background-color: white;
-}
-.pull-left{
-	width:33%;
+
 }
 .logo img{
  height:100%;
