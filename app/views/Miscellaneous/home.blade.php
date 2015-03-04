@@ -61,6 +61,7 @@
             </li>
             </ul>
 </div>
+<div class="col-md-1 col-sm-1"></div>
 <div class="col-md-8 col-sm-8 col-xs-9">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
@@ -110,7 +111,6 @@ Next
 </a>
 </div>
 </div>
-<div class="col-md-1 col-sm-1"></div>
 </h1>
 <h1 class="heading">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
 <p>
