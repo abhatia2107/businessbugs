@@ -206,3 +206,9 @@ margin-bottom: 20px;
 	padding-top:100px;
 	/*vertical-align:middle;*/
 	}
+.payments{
+	padding:50px;
+}
+a:hover{
+	text-decoration: none;
+}
