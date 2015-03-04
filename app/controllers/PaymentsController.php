@@ -111,24 +111,5 @@ class PaymentsController extends \BaseController {
 		else
 			return 'CheckSum Error. Invalid Transaction. Please try again';
 	}
-
-	public function successTest()
-	{
-		$credentials=array('status' => 'success', 
-			'txnid' => '4677747de5af21af9745',
-			'udf1'=> '1',
-			'amount'=>'40',
-			'productinfo'=>'Annual Subscription');
-		return View::make('Payments.success')->with($credentials);
-	}
-
-	public function failureTest()
-	{
-		$credentials=array('status' => 'success', 
-			'udf1'=> '1',
-			'txnid' => '4677747de5af21af9745',
-			'productinfo'=>'Annual Subscription');
-		return View::make('Payments.failure')->with($credentials);
-	}
 }
 

@@ -189,6 +189,3 @@ Route::get('/we-are-hiring', function()
 {
 return View::make('Miscellaneous.hiring');
 });
-
-	Route::get('/payments/success/test','PaymentsController@successTest');
-	Route::get('/payments/failure/test','PaymentsController@failureTest');
