@@ -42,6 +42,9 @@
 			margin-top:-270px;
 		}
 	}
+	i{
+		color:blue;
+	}
 </style>
 <div class="main-container col-md-12 col-sm-12 col-xs-12">
 <div class="main wrapper clearfix">
@@ -100,16 +103,16 @@ Next
 
 <div class="col-md-2 col-sm-2"></div>
 <div class="icons col-md-1 col-sm-1 col-xs-3">
-<ul>
+<ul class="social">
     
-            <li>
+            
             	<br/>
             	<br/>
             	<br/>
             	<br/>
             	<br/>
             	<br/>
-            </li>
+           
 	        <li class="social">
               <a href="https://www.facebook.com/businessbugs">
                 <i class="fa fa-facebook">
@@ -129,7 +132,7 @@ Next
                 </i>
               </a>
             </li>
-            <li>
+           
             	<br/>
             	<br/>
             	<br/>
@@ -140,7 +143,7 @@ Next
             	<br/>
             
        
-            </li>
+          
             </ul>
 </div>
 </h1>
