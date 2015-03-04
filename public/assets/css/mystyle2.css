@@ -36,9 +36,6 @@ body{
 .nav-text{
 	font-size: 1.1em;
 }
-/*.main-container{*/
-	margin-right: -100px !important;
-
 }
 @media(max-width:600px){
 	.header_right{
@@ -47,10 +44,12 @@ body{
 }
 .navbar-nav{
 	float:right;
+	margin-right:0px;!important
 }
 @media(max-width:600px){
 	.navbar-nav{
 	float:none;
+	margin:0px;
 }
 }
 .navbar-header{
@@ -63,6 +62,9 @@ body{
 	text-transform: none;
 	text-decoration: none;
 	border:none;
+}
+.nav-tabs li{
+	margin-right:-10px;!important
 }
 @media(max-width:600px){
 .nav-tabs li{
@@ -143,7 +145,7 @@ font-color:#5b3839;
 }
 .related a{
 	display: inline;
-	margin: 20px 10px;
+	margin: 20px 0px;
 }
 ul{
 list-style: none;

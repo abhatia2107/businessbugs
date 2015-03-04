@@ -2,12 +2,12 @@
 
 	<div class="navbar-header"> 
 		<div class="main-container">
-			<div class="logo pull-left col-md-5 col-sm-5 col-xs-12">
+			<div class="logo pull-left col-md-4 col-sm-5 col-xs-12">
 				<a href="/">
 					<img src="/assets/images/businessbugs_logo.jpg" alt="Business Bugs">
 				</a>
             </div>
-			<div class="header_right col-md-7 col-sm-7 col-xs-12">
+			<div class="header_right col-md-8 col-sm-7 col-xs-12">
 					<ul class="nav navbar-nav nav-tabs">
 						<li>
 							<a class="nav-text" href="/aboutus">ABOUT US</a>
