@@ -76,7 +76,7 @@
                   <input type="email" name="subscription_email" class="textarea text-center" placeholder="Email">
                   <button class="btn subscribe_btn" type="submit">
                     Subscribe 
-                    <i class="fa fa-long-arrow-right">
+                    <i class="fa fa-long-arrow-right" style="color:black">
                     </i>
                   </button>
                 </form>

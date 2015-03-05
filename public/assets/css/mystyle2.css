@@ -5,7 +5,7 @@ html{
 body{
 	overflow-x:hidden;
 	font-family: "Lato",Arial,sans-serif;
-	color:brown;
+	color:black;
 }
 @media(max-width:600px){
 	html{
@@ -117,7 +117,7 @@ font-color:#5b3839;
 
 .img-text p{
 	font-size:1.438em;
-	color: black;
+	color: blackblack;
 }
 @media(max-width:600px){
 .img-text p{
@@ -214,5 +214,5 @@ a:hover{
 	color: inherit;
 }
 a{
-	color:black;
+	color:gray;
 }

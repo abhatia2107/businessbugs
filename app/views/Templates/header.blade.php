@@ -45,7 +45,7 @@
 							<a class="nav-text" href="/contactus">CONTACT</a>
 						</li>
 						<li>
-							<a class="nav-text" href="/food-mad">FOOD MAD</a>
+							<a class="nav-text" href="/food-mad" style="color:red">FOOD MAD</a>
 						</li>
 					</ul>
 				<div class="col-md-12 col-sm-12 col-xs-12">

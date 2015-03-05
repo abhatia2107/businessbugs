@@ -62,7 +62,7 @@
 			<div class="maincontent lead text-center">
 				<h1>At Business Bugs our endeavor is to promote entrepreneurship to the new levels.  </h1>
 				<h2>We don't hire you basically but you partner with us. </h2>
-				<h2 style="color:red">YOU DO THE WORK &amp; YOU GET PAID. </h2>
+				<h2 style="color:black">YOU DO THE WORK &amp; YOU GET PAID. </h2>
 				<h3>We are hiring Creative writers, designers & video production guys. </h3>
 				<h4>If you are interested , send us your resume with a cover letter to <a href="mailto:contact@businessbugs.in"> contact@businessbugs.in</a></h4>
 				<h4>We will get in touch with you within 24 hours guaranteed. </h4>

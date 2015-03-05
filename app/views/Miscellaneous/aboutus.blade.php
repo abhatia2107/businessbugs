@@ -10,13 +10,13 @@
             </span>
           </h1>
           
-          <p class="lead text-center about" style="color:red"><strong>
+          <p class="lead text-center about" style="color:black"><strong>
           We are living in the time when good is not good enough & even the brilliant gets cut throat competition. The times of ‘My son will become an engineer’ have changed into ‘My son is a wedding photographer now!’ .The times of ‘My daughter will become a good house wife’ have changed to ‘My daughter is an independent fashion designer now’.
           </strong></p>
           
           
           <hr class="hr hr30">
-           <div class="lead text-center about" style="color:green">
+           <div class="lead text-center about" style="color:black">
            Reasons are many. Women especially in a country like ours feel empowered now. Private corporate sector unfortunately has made many youngsters realize the need to get out of the daily rites of a mundane life & do something for themselves. IPhone is the fashion today, and it costs 50000. So it’s affordable enough if one becomes a government servant earning 40000 p.m. without fearing the loss of job. But mostly, one ends up as a private sector employee flaunting that he belongs to the corporate culture with salary of Rs 15000 & working hours, something between 10-12 hours a day. Rarely one uses wisdom to do something which uses capabilities & transforms the person into a money making machine
            </div>
           

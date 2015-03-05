@@ -30,11 +30,12 @@
 	}
 @media(max-width:600px){
 	.heading{
+		/*font-family:Oswald;*/
 		font-size:1.438em;
 	}
 }
 	.sub-heading{
-		font-family:oswald; 
+		/*font-family:oswald; */
 		font-size: 2.3em;
 	}
 	@media(max-width:600px){
@@ -136,11 +137,12 @@ Next
             	<br/>
             	<br/>
             	<br/>
-            	<br/>          
+            	<br/>  
+            	<br/>        
             </ul>
 </div>
 </h1>
-<h1 class="heading" style="color:red">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
+<h1 class="heading" font-family="Oswald">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
 <p>
 <div class="col-lg-4">
 <div class="panel">
