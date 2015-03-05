@@ -150,7 +150,7 @@ Next
 <div class="thumbnail">
 <img src="/assets/images/learn.jpg" alt="Learn" width="150 px">
 </div>
-<div class="text-center sub-heading"  style="color:green">
+<div class="text-center sub-heading"  style="color:black">
 LEARN
 </div>
 </div>
@@ -174,7 +174,7 @@ EARN
 <div class="thumbnail">
 <img src="/assets/images/enjoy.jpg" alt="Enjoy" width="160 px">
 </div>
-<div class="text-center sub-heading" style="color:red">
+<div class="text-center sub-heading" style="color:black">
 ENJOY
 </div>
 </div>
@@ -190,7 +190,7 @@ ENJOY
 <h3 style="color:black">OUR FIRST PRODUCT</h3>
 <!-- <div class="title_icon_1"></div> -->
 				<div class="head_content sub-heading" style="text-align:left; float:left">
-				<h4 style="color:green">
+				<h4 style="color:gray">
 					<strong>
 						Simple yet Profound Entrepreneur E magazine - Business Bugs
 					</strong>
