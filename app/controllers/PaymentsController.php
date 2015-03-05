@@ -54,9 +54,9 @@ class PaymentsController extends \BaseController {
 	{
 	    $SALT = "E1RWXmkv";
 	    // $SALT = "GQs7yium";
-		$user=exec('whoami');
+		// $user=exec('whoami');
 		$credentials=Input::all();
-		$pathToFile='/home/'.$user.'/Projects/businessbugs/public/assets/magazines/February_Issue.pdf';
+		$pathToFile='/home/shivam/Projects/businessbugs/public/assets/magazines/February_Issue.pdf';
 		// dd($credentials);
 		$hashSequence = "udf1|email|firstname|productinfo|amount|txnid|key";
 		$hashVarsSeq = explode('|', $hashSequence);

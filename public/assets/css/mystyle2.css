@@ -126,8 +126,11 @@ font-color:#5b3839;
 }
 }
 .mid-text{
+	font-family:Open Sans; 
 	text-align: justify;
-	font-size: 22px;
+	font-size: 20px;
+	font-weight: lighter;
+	color: #5b3839;
 }
 .center_title{ 
 	background: none;

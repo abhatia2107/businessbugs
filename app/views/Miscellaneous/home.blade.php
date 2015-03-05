@@ -25,17 +25,17 @@
 
 	}
 	.heading{
-		/*font-family:oswald;*/
-		font-size: 2.438em;
+		font-family:oswald;
+		font-size: 4em;
 	}
 @media(max-width:600px){
 	.heading{
-		/*font-family:Oswald;*/
+		font-family:Oswald;
 		font-size:1.438em;
 	}
 }
 	.sub-heading{
-		/*font-family:oswald; */
+		font-family:oswald; 
 		font-size: 2.3em;
 	}
 	@media(max-width:600px){
@@ -142,7 +142,7 @@ Next
             </ul>
 </div>
 </h1>
-<h1 class="heading" font-family="Oswald">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
+<h1 class="heading">INDIA'S FIRST ENTREPRENEURSHIP PLATFORM IS HERE</h1>
 <p>
 <div class="col-lg-4">
 <div class="panel">
@@ -181,8 +181,9 @@ ENJOY
 </div>
 </div>
 </p>
+
 <p class="mid-text">
-<strong>BUSINESS BUGS</strong> covers the gap between 'our skills' &#38; 'making our skills profitable'. We endeavor to define entrepreneurship as a new approach of life. Be it advertising on a platform & network as ours or getting knowledge about various business domains or making writing a profitable & viable profession; we will promote entrepreneurship in a way like nobody does.
+	Business Bugs covers the gap between 'our skills' &#38; 'making our skills profitable'. We endeavor to define entrepreneurship as a new approach of life. Be it advertising on a platform & network as ours or getting knowledge about various business domains or making writing a profitable & viable profession; we will promote entrepreneurship in a way like nobody does.
 </p>
 </main>
 <section class="related">
@@ -190,7 +191,7 @@ ENJOY
 <h3 style="color:black">OUR FIRST PRODUCT</h3>
 <!-- <div class="title_icon_1"></div> -->
 				<div class="head_content sub-heading" style="text-align:left; float:left">
-				<h4 style="color:gray">
+				<h4 style="color:#5b3839">
 					<strong>
 						Simple yet Profound Entrepreneur E magazine - Business Bugs
 					</strong>
