@@ -4,9 +4,9 @@ class PaymentsController extends \BaseController {
 
 	public function create($id)
 	{
-	    $MERCHANT_KEY = "JBZaLc";
-	    $SALT = "GQs7yium";
-	    $PAYU_BASE_URL = "https://test.payu.in";
+	    $MERCHANT_KEY = "8EYpdH";
+	    $SALT = "E1RWXmkv";
+	    $PAYU_BASE_URL = "https://secure.payu.in";
 	    $service_provider="payu_paisa";
 		$user_id=Auth::id();
 		$user=User::find($user_id);

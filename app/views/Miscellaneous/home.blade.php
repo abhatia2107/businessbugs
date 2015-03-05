@@ -132,18 +132,11 @@ Next
                 </i>
               </a>
             </li>
-           
+          		<br/>
             	<br/>
             	<br/>
             	<br/>
-            	<br/>
-            	<br/>
-            	<br/>
-            	<br/>
-            	<br/>
-            
-       
-          
+            	<br/>          
             </ul>
 </div>
 </h1>
