@@ -4,9 +4,12 @@ class PaymentsController extends \BaseController {
 
 	public function create($id)
 	{
-	    $MERCHANT_KEY = "8EYpdH";
+	    /*$MERCHANT_KEY = "8EYpdH";
 	    $SALT = "E1RWXmkv";
-	    $PAYU_BASE_URL = "https://secure.payu.in";
+	    $PAYU_BASE_URL = "https://secure.payu.in";*/
+	    $MERCHANT_KEY = "JBZaLc";
+	    $SALT = "GQs7yium";
+	    $PAYU_BASE_URL = "https://test.payu.in";
 	    $service_provider="payu_paisa";
 		$user_id=Auth::id();
 		$user=User::find($user_id);
@@ -47,6 +50,7 @@ class PaymentsController extends \BaseController {
 
 	public function success()
 	{
+	    // $SALT = "E1RWXmkv";
 	    $SALT = "GQs7yium";
 		$user=exec('whoami');
 		$credentials=Input::all();
@@ -79,7 +83,7 @@ class PaymentsController extends \BaseController {
 			{
 		    	// $message->from('contact@businessbugs.in', 'Contact');
 				$message->to($email,$name)->subject($subject);
-			    $message->attach($pathToFile);
+			    // $message->attach($pathToFile);
 			});
 			$user = array('customer_user_id' => $user_id,
 					'customer_magazine_id' => $credentials['udf1'], );
@@ -92,6 +96,7 @@ class PaymentsController extends \BaseController {
 
 	public function failure()
 	{
+	    // $SALT = "E1RWXmkv";
 	    $SALT = "GQs7yium";
 		$credentials=Input::all();
 		// dd($credentials);
