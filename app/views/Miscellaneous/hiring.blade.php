@@ -59,7 +59,7 @@
 			}
 		</style>
 		<div class="main-container">
-			<div class="maincontent lead text-center">
+			<div class="maincontent lead text-justify">
 				<h1>At Business Bugs our endeavor is to promote entrepreneurship to the new levels.  </h1>
 				<h2>We don't hire you basically but you partner with us. </h2>
 				<h2 style="color:black">YOU DO THE WORK &amp; YOU GET PAID. </h2>

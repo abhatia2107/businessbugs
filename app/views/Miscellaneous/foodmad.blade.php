@@ -5,7 +5,7 @@
 <div class="banner wrapper">
 <img src="/assets/images/yummy-foods.JPG">
 </div>
-<div class="lead text-center">
+<div class="lead text-justify">
 
 
 <p style="color:black">This is going to be one of the most unique contests in the world around.  Just 
