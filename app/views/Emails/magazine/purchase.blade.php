@@ -19,7 +19,7 @@
 				<p style="font-size:120%; color:#000;">
 					Welcome to Business Bugs - India's First Entrepreneurship E - Commerce Platform. Business Bugs is the platform for the entrepreneurs  & by the entrepreneurs. 
 					@if($magazine!="Annual Subscription")
-						You can also buy our annual subscription for just ₹ 300 (38% off). 
+						You can also buy our annual subscription for just Rs 300 (38% off). 
 					@endif
 					Visit <a href="www.businessbugs.in">www.businessbugs.in</a> for more.
 				</p>

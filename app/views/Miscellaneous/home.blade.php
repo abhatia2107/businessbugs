@@ -208,7 +208,7 @@ ENJOY
 							</h3>
 						</div>
 						<h5 style="color:black">
-							Price: ₹ 40
+							Price: Rs 40
 						</h5>
 						<div class="text-right">
 							<button type="button" class="btn btn-success">
@@ -227,7 +227,7 @@ ENJOY
 							</h3>
 						</div>
 						<h5>
-							Price: <strike style="color:red"> ₹ 480 </strike> 38% OFF ₹ 300
+							Price: <strike style="color:red"> Rs 480 </strike> 38% OFF Rs 300
 						</h5>
 						<div class="text-right">
 							<button type="button" class="btn btn-success">

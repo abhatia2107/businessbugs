@@ -14,7 +14,7 @@
 		    		</div>
 	    		</div> 
 	    		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-center">
-	    			<h4>Total Price: ₹30</h4>
+	    			<h4>Total Price: Rs 30</h4>
 					<a id="pay" class="btn btn-primary" role="button" href="/payments/create/2">Pay</a>
 	    		</div> 
 	  		</div>

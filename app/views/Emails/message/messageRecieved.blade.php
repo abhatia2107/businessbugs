@@ -18,7 +18,7 @@
 				</p>
 				<p style="font-size:120%; color:#000;">
 				
-		         	Business Bugs is the platform for the entrepreneurs  & by the entrepreneurs. You can buy Business Bugs Magazine ₹ 40 per month &  annual subscription for just ₹ 300 (38% off).
+		         	Business Bugs is the platform for the entrepreneurs  & by the entrepreneurs. You can buy Business Bugs Magazine Rs 40 per month &  annual subscription for just Rs 300 (38% off).
 					Visit <a href="www.businessbugs.in">www.businessbugs.in</a> for more.
 				</p>
 				<p style="font-size:120%; color:#000;">
