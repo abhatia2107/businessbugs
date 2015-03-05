@@ -1,14 +1,14 @@
 @extends('Layouts.layout')
 @section('content')
 <div class="main-container wrapper">
-<h3 class="text-center" style="color:red"><strong>I Love food. We love food. We all love food. We all are Food Mad.</strong></h3>
+<h3 class="text-center" style="color:black"><strong>I Love food. We love food. We all love food. We all are Food Mad.</strong></h3>
 <div class="banner wrapper">
 <img src="/assets/images/yummy-foods.JPG">
 </div>
 <div class="lead text-center">
 
 
-<p style="color:brown">This is going to be one of the most unique contests in the world around.  Just 
+<p style="color:black">This is going to be one of the most unique contests in the world around.  Just 
 
 imagine that if we had an option to eat at an epic eatery, write a description of 
 
@@ -23,7 +23,7 @@ for success is this contest is very simple – The recipe of the place at which 
 eating has to be very tasty.</p>
 
 <h3 class="text-left" style="color:gray"><strong>CONTEST-</li></strong></h3>
-<ol><h3 class="text-left" style="color:green;font-size:4">
+<ol><h3 class="text-left" style="color:black;font-size:4">
 <li> Choose a less known yet tasty eatery or choose a food item which is rarely on food menu.</li>
 <li> Eat at that place; relish the food & give the place an observation.</li>
 <li> Describe the food, the recipe, the owner, history, how to get at that place.</li>
