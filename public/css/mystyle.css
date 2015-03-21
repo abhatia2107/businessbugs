@@ -1,0 +1,147 @@
+body{
+	font-family:sans-serif;
+}
+.navbar-top{
+	background:rgb(0,80,80);
+}
+.navbar-header{
+	background: rgb(0,100,100);
+	float: none;
+}
+.navbar-nav li a:hover{
+ 	background: none;
+ 	border: none;
+ 	color: inherit;
+}
+.navbar-nav li:active{
+ 	background: none;
+ 	border: none;
+ 	color: inherit;
+}
+.nav-tabs{
+	border-bottom: none;
+}
+.navbar-toggle{
+ background:white;	
+}
+.icon-bar{
+	background: rgb(0,100,100);
+}
+.footer{
+	background: #EDEFF1;
+}
+.footer .textarea{
+	height:34px;
+}
+ .carousel-inner .active img{
+	height:500px;
+	width:100%;
+}
+.navbar-brand img{
+	width:150px;
+	height:25px;
+}
+ul{
+	list-style: none;
+	line-height: 1.8;
+	margin-left:-40px;
+}
+.subscribe_btn{
+	width:100%;
+	background: rgb(0,100,100);
+	margin-top: 10px;
+}
+#magazine{
+	margin-top:-100px;
+	width:auto;
+}
+.textarea{
+	width:100%;
+}
+.social{
+	width:100%;
+}
+.social li{
+	background: #B5B5B5;
+    border-radius: 50%;
+    width:30px;
+    text-align: center;
+    float:left;
+    margin:0px 20px 0px 0px;
+    line-height:2;
+    padding-left: 7px;
+}
+.footer h3{
+	text-transform: uppercase;
+	text-indent: none;
+	border-bottom: 1px solid #CECECE;
+	font-weight: 300px;
+	margin-bottom: 20px;
+}
+.footer li{
+	text-align: left;
+}
+.block-title-3 {
+    border-bottom: 1px solid #CECECE;
+    font-size: 20px;
+    margin: 0px 0px 15px;
+    padding: 10px 0px;
+    position: relative;
+    text-transform: uppercase;
+}
+.main-container{
+	height:50px;
+}
+.section-title-style2{
+	border-bottom: 1px solid #CECECE;
+}
+.description{
+	padding-left:30px;
+	background: antiquewhite;
+	margin-bottom:0px;
+}
+.col12{
+	text-align: center;
+	margin-top:-20px;
+}
+.section-title-style2 span {
+    background: none repeat scroll 0% 0% #FFF;
+    padding: 10px;
+    position: relative;
+    width: auto;
+    z-index: 2;
+}
+.title-big{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	line-height: 0;
+}
+.innerPage{
+	padding:inherit;
+}
+.modal-footer{
+	text-align:center;
+}
+.required sup{
+	color:#E74C3C;
+}
+.modal-dialog{
+	margin-top:100px;
+}
+.login{
+	width:400px;
+}
+.inner-addon .glyphicon{
+	position: absolute;
+}
+.glyph-left{
+	padding-left: 9px;
+	padding-top: 8px;
+}
+.carousel-inner .active{
+	display:block;
+	position:relative;
+}
+.inner-addon input{
+	padding-left: 30px;
+}

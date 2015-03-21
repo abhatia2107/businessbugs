@@ -1,0 +1,24 @@
+
+.ui-richtextarea { padding: 2px;}
+
+.ui-richtextarea-button{ height:16px; margin:1px; width:16px; float:left; }
+
+.ui-richtextarea-toolsbar {height: 20px; margin-bottom : 2px;width:660px;}
+.ui-richtextarea-navbar {height: 20px; margin-top : 2px;}
+.ui-richtextarea-content {overflow:auto; font-size:12px; padding: 2px; height: 135px !important;
+    width: 660px !important}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-richtextarea-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
+
+/* states and images */
+.ui-richtextarea-icon { width: 16px; height: 16px; background-image: url(../../../public/assets/images/ui-richtextarea-icons_222222_256x16.png); }
+.ui-state-active .ui-richtextarea-icon {background-image: url(../../../public/assets/images/ui-richtextarea-icons_222222_256x16.png); }
+
+/* positioning */
+.ui-richtextarea-icon-bold { background-position: 0 0; }
+.ui-richtextarea-icon-italic { background-position: -16px 0; }
+.ui-richtextarea-icon-underline { background-position: -32px 0; }

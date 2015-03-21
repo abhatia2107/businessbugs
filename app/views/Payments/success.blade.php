@@ -8,7 +8,7 @@
 	
 	<h4>Your Transaction ID for this transaction is <strong>{{$txnid}}</strong>.</h4>
 	<h4>We have received a payment of <strong>Rs {{$amount}}</strong> for your order.</h4>
-	<h4>Your copy of <strong>{{$productinfo}}</strong> have been mailed to you.</h4>
+	<h4>Your copy of <strong>{{$productinfo}}</strong> have been mailed to you. Please check your spam box too.</h4>
 	</div>
 	</div>
 	</div>

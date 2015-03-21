@@ -20,7 +20,7 @@ class HomeController extends BaseController {
 		$homeLang =Lang::get('ViewsLang/home');
 		// dd($homeLang);
 		$magazine=Magazine::all();
-		return View::make('Miscellaneous.home',compact('homeLang','magazine'));
+		return View::make('Miscellaneous.homeNew',compact('homeLang','magazine'));
 	}
 
 	public function showDummyWelcome()

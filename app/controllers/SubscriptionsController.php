@@ -52,7 +52,7 @@ class SubscriptionsController extends \BaseController {
 		{
 			$message->to($email,$name)->subject($subject);
 		});
-		return Redirect::back()->with('success',Lang::get('subscription.subscribed'));
+		return Redirect::to('/')->with('success',Lang::get('subscription.subscribed'));
 	}
 
 	public function unsubscribe($email,$id)

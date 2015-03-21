@@ -6,7 +6,7 @@ return array(
 		
 		"feedback_create_failed" => "Sorry, We are unable to add the feedback",
 		
-		"feedback_email"=>"abhatia2107@gmail.com",
+		"feedback_email"=>"shivamtrehan55@gmail.com",
 
 		"feedback_email_name"=>"Feedback Business Bugs",
 
